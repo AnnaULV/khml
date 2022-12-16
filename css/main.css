@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.main {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: clamp(66rem, 100%, 112rem);
+}
