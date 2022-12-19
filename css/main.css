@@ -7,3 +7,11 @@
     background-position: 50% 50%;
     height: clamp(66rem, 100%, 112rem);
 }
+
+.main-content {
+    display: flex;
+}
+
+.main-content > div {
+    width: 50%;
+}
