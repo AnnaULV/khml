@@ -5,13 +5,91 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: clamp(66rem, 100%, 112rem);
+
 }
 
 .main-content {
     display: flex;
 }
 
-.main-content > div {
+.main-content > div + div {
+    justify-content: flex-start;
+    padding-right: 1rem;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.main > div:not(.swiper) > div > div {
+    max-width: 71.625rem;
+}
+
+.main > div:not(.swiper) > div:last-child > div > h1 {
+    padding-top: clamp(33.875rem, 3.6vw, 41.25rem);
+    padding-right: clamp(3.5rem, 8726vw, 10rem);
+    padding-left: clamp(3.5rem, 8726vw, 10rem);
+    padding-bottom: clamp(5.6rem, .8726vw, 10rem)
+}
+
+.main > div:not(.swiper) > div:last-child > div > h1 > span {
+    display: block;
+}
+
+
+
+@media (min-width : 1441px) {
+    .main > div:not(.swiper) > div {
     width: 50%;
+}
+    
+    .main > div:not(.swiper) > div:first-child {
+        display: flex;
+    }
+}
+
+@media (min-width : 1201px) and (max-width : 1440px) {
+    .main > div:not(.swiper) > div {
+    width: 50%;
+}
+    
+    .main > div:not(.swiper) > div:first-child {
+        display: flex;
+    }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+    .main > div:not(.swiper) > div {
+    width: 50%;
+}
+    
+    .main > div:not(.swiper) > div:first-child {
+        display: flex;
+    }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+    .main > div:not(.swiper) > div {
+    width: 50%;
+}
+    
+    .main > div:not(.swiper) > div:first-child {
+        display: flex;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+    .main > div:not(.swiper) > div {
+    width: 100%;
+}
+    
+    .main > div:not(.swiper) > div:first-child {
+        display: none;
+    }
+}
+
+@media (max-width : 480px) {
+    .main > div:not(.swiper) > div {
+    width: 100%;
+}
+    .main > div:not(.swiper) > div:first-child {
+        display: none;
+    }
 }
