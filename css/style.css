@@ -47,7 +47,6 @@ a:hover {
 h1 {
     font-size: clamp(3rem, 4.36vw, 6.25rem);
     font-weight: 500;
-    padding: 41.25rem 18.5rem 29.75rem 10.4rem;
 }
 
 h2,
