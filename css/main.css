@@ -17,8 +17,8 @@ z-index: 2;
 .main > div:not(.gallery.object) > div > div {
     max-width: 71.625rem;
     padding-top: clamp(33.875rem, 3.6vw, 41.25rem);
-    padding-right: clamp(3.5rem, 8726vw, 10rem);
-    padding-left: clamp(3.5rem, 8726vw, 10rem);
+    padding-right: clamp(3.5rem, .8726vw, 10rem);
+    padding-left: clamp(3.5rem, .8726vw, 10rem);
     padding-bottom: clamp(20rem, 2.6vw, 30rem);
 }
 

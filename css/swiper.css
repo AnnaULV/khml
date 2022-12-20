@@ -2,6 +2,7 @@
 
 .swiper-pagination {
     position: absolute;
+    bottom: 7rem;
 }
 
 .gallery {
