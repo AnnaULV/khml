@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
-.gallery + .swiper-pagination {
+.swiper-pagination {
     position: absolute;
-    bottom: 1.5rem;
-    padding-bottom: 3rem;
-    z-index: 3;
 }
 
 .gallery {
