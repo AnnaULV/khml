@@ -6,8 +6,8 @@
 
 .main-content {
     display: flex;
-position: relative;
-z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .main-content > div + div {
@@ -16,15 +16,13 @@ z-index: 2;
 
 .main > div:not(.gallery.object) > div > div {
     max-width: 71.625rem;
-    padding-top: clamp(33.875rem, 3.6vw, 41.25rem);
-    padding-right: clamp(3.5rem, .8726vw, 10rem);
-    padding-left: clamp(3.5rem, .8726vw, 10rem);
-    padding-bottom: clamp(20rem, 2.6vw, 30rem);
+    padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
+    padding-right: clamp(3.5rem, 6.75vw, 10rem);
+    padding-left: clamp(3.5rem, 6.75vw, 10rem);
+    padding-bottom: clamp(20rem, 25vw, 30rem);
 }
 
-.main > div:not(.gallery.object) > div:last-child > div > h1 {
-    
-}
+.main > div:not(.gallery.object) > div:last-child > div > h1 {}
 
 .main > div:not(.gallery.object) > div:last-child > div > h1 > span {
     display: block;
@@ -34,9 +32,9 @@ z-index: 2;
 
 @media (min-width : 1441px) {
     .main > div:not(.gallery.object) > div {
-    width: 50%;
-}
-    
+        width: 50%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: flex;
     }
@@ -44,9 +42,9 @@ z-index: 2;
 
 @media (min-width : 1201px) and (max-width : 1440px) {
     .main > div:not(.gallery.object) > div {
-    width: 50%;
-}
-    
+        width: 50%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: flex;
     }
@@ -54,9 +52,9 @@ z-index: 2;
 
 @media (min-width : 961px) and (max-width : 1200px) {
     .main > div:not(.gallery.object) > div {
-    width: 50%;
-}
-    
+        width: 50%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: flex;
     }
@@ -64,9 +62,9 @@ z-index: 2;
 
 @media (min-width : 721px) and (max-width : 960px) {
     .main > div:not(.gallery.object) > div {
-    width: 50%;
-}
-    
+        width: 50%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: flex;
     }
@@ -74,9 +72,9 @@ z-index: 2;
 
 @media (min-width : 481px) and (max-width : 720px) {
     .main > div:not(.gallery.object) > div {
-    width: 100%;
-}
-    
+        width: 100%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: none;
     }
@@ -84,8 +82,9 @@ z-index: 2;
 
 @media (max-width : 480px) {
     .main > div:not(.gallery.object) > div {
-    width: 100%;
-}
+        width: 100%;
+    }
+
     .main > div:not(.gallery.object) > div:first-child {
         display: none;
     }
