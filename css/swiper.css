@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 .gallery + .swiper-pagination {
-    position: relative;
-    top: 1.5rem;
+    position: absolute;
+    bottom: 1.5rem;
     padding-bottom: 3rem;
+    z-index: 3;
 }
 
 .gallery {
@@ -95,7 +96,7 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2rem;
-} 
+}
 
 @media (min-width : 1441px) {}
 
