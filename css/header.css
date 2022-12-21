@@ -36,7 +36,7 @@ header > .center > div > .logo {
 
 header > .center > div > ul {
     padding: 0 5rem 0 0;
-    margin: 0;
+    margin: -1rem 0 0 0;
     list-style: none;
 }
 
@@ -53,6 +53,21 @@ header > .center > div > ul > li > span {
     cursor: pointer;
 }
 
-header > .center > div > ul > li > span:hover {
+header > .center > div > ul > li > span:hover,
+header > .center > div > a > span:hover {
     color: #BA0C2F;
+}
+
+header > .center > div > a {
+    padding: 0 0 0 5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header > .center > div > a > span {
+    color: #FFF;
+    transition: color .25s linear;
+    cursor: pointer;
+    font-size: 3.25rem;
+    font-weight: 500;
 }
