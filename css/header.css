@@ -25,8 +25,8 @@ header > .center > div {
 
 header > .center > div > .logo {
     background-image: url(../img/logo.svg);
-    width: 25rem;
-    height: 18.75rem;
+    width: clamp(21.25rem, 23.125vw, 25rem);
+    height: clamp(15.93rem, 17.34vw, 18.75rem);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 50%;
@@ -59,7 +59,7 @@ header > .center > div > a > span:hover {
 }
 
 header > .center > div > a {
-    padding: 0 0 0 5rem;
+    padding-left: clamp(3.5rem, 6.75vw, 10rem);
     text-decoration: none;
     white-space: nowrap;
 }
