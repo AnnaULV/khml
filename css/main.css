@@ -4,6 +4,120 @@
     position: relative;
 }
 
+.main > .header {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    padding-top: 7rem;
+    top:0;
+}
+
+.main > .header > .center {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 145rem;
+    width: 100%;
+    display: flex;
+}
+
+.main > .header > .center > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > .center > div:last-child > div {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header > .center > div > .logo {
+    background-image: url(../img/logo.svg);
+    width: clamp(21.25rem, 23.125vw, 25rem);
+    height: clamp(15.93rem, 17.34vw, 18.75rem);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 0%;
+    cursor: pointer;
+    display: block;
+}
+
+.header > .center > div > ul {
+    padding: 0 5rem 0 0;
+    margin: -1rem 0 0 0;
+    list-style: none;
+}
+
+.header > .center > div > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5rem;
+}
+
+.header > .center > div > ul > li > span {
+    color: #FFF;
+    transition: color .25s linear;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.header > .center > div > ul > li > span:hover,
+.header > .center > div > div > a > span:hover {
+    color: #BA0C2F;
+}
+
+.header > .center > div > div > a {
+    padding-left: clamp(3.5rem, 6.75vw, 10rem);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header > .center > div > div > a > span {
+    color: #FFF;
+    transition: color .25s linear;
+    cursor: pointer;
+    font-size: 3.25rem;
+    font-weight: 500;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin: 0 0 0 3.5rem;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    border-radius: .5rem;
+}
+
+button > span:first-child {
+    width: 100%;
+    height: inherit;
+    background-image: url(../img/phone-forwarded.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+    background-position: 100% 50%;
+    transition: opacity .25s ease-in-out;
+    min-width: 3rem;
+}
+
+button > span:last-child {
+    margin-left: 1rem;
+    font-family: "content", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFF;
+    white-space: nowrap;
+}
+
 .main-content {
     display: flex;
     position: relative;
@@ -14,7 +128,7 @@
     background-color: rgba(0, 0, 0, .6);
 }
 
-.main > div:not(.gallery.object) > div > div {
+.main > div:not(.gallery.object):not(.header) > div > div {
     max-width: 70rem;
     padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
     padding-right: clamp(3.5rem, 6.75vw, 10rem);
@@ -31,61 +145,113 @@
 
 
 @media (min-width : 1441px) {
-    .main > div:not(.gallery.object) > div {
+    button {
+        padding: 1rem 2rem;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .main > div:not(.gallery.object) > div {
+    button {
+        padding: 1rem 2rem;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .main > div:not(.gallery.object) > div {
+     button {
+        border: 0;
+        padding: 0;
+    }
+
+    button > span:last-child {
+        display: none;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .main > div:not(.gallery.object) > div {
+     button {
+        border: 0;
+        padding: 0;
+    }
+
+    button > span:last-child {
+        display: none;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .main > div:not(.gallery.object) > div {
+    .header {
+        display: none;
+    }
+    
+     button {
+        border: 0;
+        padding: 0;
+    }
+
+    button > span:last-child {
+        display: none;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 100%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
     }
 }
 
 @media (max-width : 480px) {
-    .main > div:not(.gallery.object) > div {
+    .header {
+        display: none;
+    }
+    
+     button {
+        border: 0;
+        padding: 0;
+    }
+
+    button > span:last-child {
+        display: none;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
         width: 100%;
     }
 
-    .main > div:not(.gallery.object) > div:first-child {
+    .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
     }
 }

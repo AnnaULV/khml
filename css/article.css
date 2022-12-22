@@ -3,5 +3,4 @@
 article {
     position: relative;
     flex-grow: 1;
-    margin-top: calc(0rem - 7rem - 18.75rem - 6.25rem);
 }

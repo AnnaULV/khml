@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-header {
+.header {
     position: sticky;
     width: 100%;
     z-index: 5;
     padding-top: 7rem;
 }
 
-header > .center {
+.header > .center {
     position: relative;
     margin: 0 auto;
     padding-left: 2.5rem;
@@ -17,19 +17,21 @@ header > .center {
     display: flex;
 }
 
-header > .center > div {
+.header > .center > div {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
-header > .center > div:last-child > div {
+.header > .center > div:last-child > div {
     display: flex;
     align-items: center;
     height: 5rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
-header > .center > div > .logo {
+.header > .center > div > .logo {
     background-image: url(../img/logo.svg);
     width: clamp(21.25rem, 23.125vw, 25rem);
     height: clamp(15.93rem, 17.34vw, 18.75rem);
@@ -40,38 +42,38 @@ header > .center > div > .logo {
     display: block;
 }
 
-header > .center > div > ul {
+.header > .center > div > ul {
     padding: 0 5rem 0 0;
     margin: -1rem 0 0 0;
     list-style: none;
 }
 
-header > .center > div > ul > li {
+.header > .center > div > ul > li {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 5rem;
 }
 
-header > .center > div > ul > li > span {
+.header > .center > div > ul > li > span {
     color: #FFF;
     transition: color .25s linear;
     cursor: pointer;
     white-space: nowrap;
 }
 
-header > .center > div > ul > li > span:hover,
-header > .center > div > div > a > span:hover {
+.header > .center > div > ul > li > span:hover,
+.header > .center > div > div > a > span:hover {
     color: #BA0C2F;
 }
 
-header > .center > div > div > a {
+.header > .center > div > div > a {
     padding-left: clamp(3.5rem, 6.75vw, 10rem);
     text-decoration: none;
     white-space: nowrap;
 }
 
-header > .center > div > div > a > span {
+.header > .center > div > div > a > span {
     color: #FFF;
     transition: color .25s linear;
     cursor: pointer;
@@ -85,7 +87,7 @@ button {
     cursor: pointer;
     height: 5rem;
     padding: 1rem 2rem;
-    margin: 0 0 0 2.5rem;
+    margin: 0 0 0 3.5rem;
     border: 1px solid #FFF;
     background-color: transparent;
     border-radius: .5rem;
@@ -111,13 +113,27 @@ button > span:last-child {
     white-space: nowrap;
 }
 
-@media (min-width : 1441px) {}
+@media (min-width : 1441px) {
 
-@media (min-width : 1201px) and (max-width : 1440px) {}
+    button {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width : 1201px) and (max-width : 1440px) {
+   
+
+    button {
+        padding: 1rem 2rem;
+    }
+}
 
 @media (min-width : 961px) and (max-width : 1200px) {
+  
+
     button {
         border: 0;
+        padding: 0;
     }
 
     button > span:last-child {
@@ -126,8 +142,10 @@ button > span:last-child {
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
+
     button {
         border: 0;
+        padding: 0;
     }
 
     button > span:last-child {
@@ -136,8 +154,11 @@ button > span:last-child {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
+   
+
     button {
         border: 0;
+        padding: 0;
     }
 
     button > span:last-child {
@@ -146,8 +167,11 @@ button > span:last-child {
 }
 
 @media (max-width : 480px) {
+    
+
     button {
         border: 0;
+        padding: 0;
     }
 
     button > span:last-child {
