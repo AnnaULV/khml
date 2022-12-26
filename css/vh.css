@@ -4,7 +4,8 @@
   height: calc(var(--vh, 1vh) * 100);
 }
 
-.main {
+.main,
+.main-content {
  min-height: calc(var(--vh, 1vh) * 100);   
 }
 

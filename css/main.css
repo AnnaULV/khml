@@ -133,7 +133,7 @@ button > span:last-child {
     padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
     padding-right: clamp(3rem, 6.5vw, 10rem);
     padding-left: clamp(3rem, 6.5vw, 10rem);
-    padding-bottom: clamp(20rem, 25vw, 30rem);
+    padding-bottom: clamp(16.25rem, 23.125vw, 30rem);
 }
 
 .main > div:not(.gallery.object) > div:last-child > div > h1 {}
@@ -156,6 +156,10 @@ button > span:last-child {
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
+    
+     .main > div:not(.gallery.object):not(.header) > div {
+        margin: 0;
+    }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
@@ -169,6 +173,10 @@ button > span:last-child {
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
+    }
+    
+     .main > div:not(.gallery.object):not(.header) > div {
+        margin: 0;
     }
 }
 
@@ -189,6 +197,10 @@ button > span:last-child {
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
     }
+    
+     .main > div:not(.gallery.object):not(.header) > div {
+        margin: 0;
+    }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
@@ -207,6 +219,10 @@ button > span:last-child {
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
+        margin: 0;
     }
 }
 
@@ -231,6 +247,10 @@ button > span:last-child {
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
     }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
+        margin: 9rem 3rem 3rem 3rem;
+    }
 }
 
 @media (max-width : 480px) {
@@ -253,5 +273,9 @@ button > span:last-child {
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
+    }
+    
+    .main > div:not(.gallery.object):not(.header) > div {
+        margin: 9rem 3rem 3rem 3rem;
     }
 }
