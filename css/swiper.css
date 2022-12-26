@@ -70,8 +70,8 @@
 }
 
 .swiper-pagination-bullet {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     display: inline-block;
     border-radius: 50%;
 }
@@ -79,16 +79,16 @@
 .swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     cursor: pointer;
     transition: transform .25s ease-in-out;
-    background-color: #D1D2D5;
+    background-color: #F0F0F0;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet:hover,
 .swiper-pagination-bullet-active {
-    transform: scale(1.1);
+    transform: scale(1.35);
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #3A86C7;
+    background-color: #BA0C2F;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

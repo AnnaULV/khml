@@ -15,9 +15,9 @@
 .main > .header > .center {
     position: relative;
     margin: 0 auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    max-width: 145rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 146rem;
     width: 100%;
     display: flex;
 }
@@ -131,8 +131,8 @@ button > span:last-child {
 .main > div:not(.gallery.object):not(.header) > div > div {
     max-width: 70rem;
     padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
-    padding-right: clamp(3.5rem, 6.75vw, 10rem);
-    padding-left: clamp(3.5rem, 6.75vw, 10rem);
+    padding-right: clamp(3rem, 6.5vw, 10rem);
+    padding-left: clamp(3rem, 6.5vw, 10rem);
     padding-bottom: clamp(20rem, 25vw, 30rem);
 }
 
