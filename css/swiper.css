@@ -2,6 +2,8 @@
 
 .swiper-pagination {
     position: absolute;
+    left: 0;
+    width: 100%;
     bottom: clamp(6.25rem, 6.75vw,7.25rem);
 }
 
@@ -65,10 +67,6 @@
     background-position: center;
 }
 
-.swiper-pagination {
-    text-align: center;
-}
-
 .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
@@ -96,14 +94,46 @@
     margin: 0 2rem;
 }
 
-@media (min-width : 1441px) {}
+@media (min-width : 1441px) {
+    .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+}
 
-@media (min-width : 1201px) and (max-width : 1440px) {}
+@media (min-width : 1201px) and (max-width : 1440px) {
+    .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+}
 
-@media (min-width : 961px) and (max-width : 1200px) {}
+@media (min-width : 961px) and (max-width : 1200px) {
+    .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+}
 
-@media (min-width : 721px) and (max-width : 960px) {}
+@media (min-width : 721px) and (max-width : 960px) {
+    .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+}
 
-@media (min-width : 481px) and (max-width : 720px) {}
+@media (min-width : 481px) and (max-width : 720px) {
+    .swiper-pagination {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
 
-@media (max-width : 480px) {}
+@media (max-width : 480px) {
+    .swiper-pagination {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}

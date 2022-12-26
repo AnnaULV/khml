@@ -129,6 +129,7 @@ button > span:last-child {
 }
 
 .main > div:not(.gallery.object):not(.header) > div > div {
+    position: relative;
     max-width: 70rem;
     padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
     padding-right: clamp(3rem, 6.5vw, 10rem);
