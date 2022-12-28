@@ -122,7 +122,6 @@ button > span:last-child {
     display: flex;
     position: relative;
     z-index: 2;
-    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .main > .gallery.object + div > div:last-child > div {
