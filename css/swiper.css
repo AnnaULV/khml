@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.swiper-pagination {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: clamp(6.25rem, 6.75vw,7.25rem);
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: clamp(3rem, 5.125vw,7.25rem);
 }
 
 .gallery {

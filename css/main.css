@@ -9,7 +9,7 @@
     width: 100%;
     z-index: 5;
     padding-top: 7rem;
-    top:0;
+    top: 0;
 }
 
 .main > .header > .center {
@@ -118,23 +118,27 @@ button > span:last-child {
     white-space: nowrap;
 }
 
-.main-content {
+.main > .gallery.object + div {
     display: flex;
     position: relative;
     z-index: 2;
 }
 
-.main-content > div + div {
-    background-color: rgba(0, 0, 0, .6);
-}
+.main > .gallery.object + div > div {
+  min-height: calc(var(--vh, 1vh) * 100);
+  }
 
-.main > div:not(.gallery.object):not(.header) > div > div {
+.main > .gallery.object + div > div:last-child > div {
     position: relative;
-    max-width: 70rem;
-    padding-top: clamp(33.875rem, 37.56vw, 41.25rem);
+    width: 100%;
+    padding-top: clamp(12.75rem, 27vw, 41.25rem);
     padding-right: clamp(3rem, 6.5vw, 10rem);
     padding-left: clamp(3rem, 6.5vw, 10rem);
     padding-bottom: clamp(16.25rem, 23.125vw, 30rem);
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
 }
 
 .main > div:not(.gallery.object) > div:last-child > div > h1 {}
@@ -149,17 +153,13 @@ button > span:last-child {
     button {
         padding: 1rem 2rem;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
-    }
-    
-     .main > div:not(.gallery.object):not(.header) > div {
-        margin: 0;
     }
 }
 
@@ -167,22 +167,18 @@ button > span:last-child {
     button {
         padding: 1rem 2rem;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
-    }
-    
-     .main > div:not(.gallery.object):not(.header) > div {
-        margin: 0;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-     button {
+    button {
         border: 0;
         padding: 0;
     }
@@ -190,22 +186,18 @@ button > span:last-child {
     button > span:last-child {
         display: none;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
-    }
-    
-     .main > div:not(.gallery.object):not(.header) > div {
-        margin: 0;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-     button {
+    button {
         border: 0;
         padding: 0;
     }
@@ -213,17 +205,13 @@ button > span:last-child {
     button > span:last-child {
         display: none;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 50%;
     }
 
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: flex;
-    }
-    
-    .main > div:not(.gallery.object):not(.header) > div {
-        margin: 0;
     }
 }
 
@@ -231,8 +219,8 @@ button > span:last-child {
     .header {
         display: none;
     }
-    
-     button {
+
+    button {
         border: 0;
         padding: 0;
     }
@@ -240,7 +228,7 @@ button > span:last-child {
     button > span:last-child {
         display: none;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 100%;
     }
@@ -248,9 +236,9 @@ button > span:last-child {
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
     }
-    
-    .main > div:not(.gallery.object):not(.header) > div {
-        margin: 9rem 3rem 3rem 3rem;
+
+    .main > .gallery.object + div > div {
+        padding: 9rem 3rem 3rem 3rem;
     }
 }
 
@@ -258,8 +246,8 @@ button > span:last-child {
     .header {
         display: none;
     }
-    
-     button {
+
+    button {
         border: 0;
         padding: 0;
     }
@@ -267,7 +255,7 @@ button > span:last-child {
     button > span:last-child {
         display: none;
     }
-    
+
     .main > div:not(.gallery.object):not(.header) > div {
         width: 100%;
     }
@@ -275,8 +263,8 @@ button > span:last-child {
     .main > div:not(.gallery.object):not(.header) > div:first-child {
         display: none;
     }
-    
-    .main > div:not(.gallery.object):not(.header) > div {
-        margin: 9rem 3rem 3rem 3rem;
+
+    .main > .gallery.object + div > div {
+        padding: 9rem 3rem 3rem 3rem;
     }
 }
