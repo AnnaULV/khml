@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.main > .header {
+.main > div:first-child {
     position: absolute;
     width: 100%;
     z-index: 5;
@@ -12,7 +12,7 @@
     top: 0;
 }
 
-.main > .header > .center {
+.main > div:first-child > .center {
     position: relative;
     margin: 0 auto;
     padding-left: 3rem;
@@ -22,13 +22,13 @@
     display: flex;
 }
 
-.main > .header > .center > div {
+.main > div:first-child > .center > div {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
-.header > .center > div:last-child > div {
+.main > div:first-child > .center > div:last-child > div {
     display: flex;
     align-items: center;
     height: 5rem;
@@ -36,7 +36,7 @@
     justify-content: space-between;
 }
 
-.header > .center > div > .logo {
+.main > div:first-child > .center > div > span {
     background-image: url(../img/logo.svg);
     width: clamp(21.25rem, 23.125vw, 25rem);
     height: clamp(15.93rem, 17.34vw, 18.75rem);
@@ -47,38 +47,39 @@
     display: block;
 }
 
-.header > .center > div > ul {
+.main > div:first-child > .center > div > ul {
     padding: 0 5rem 0 0;
-    margin: -1rem 0 0 0;
+    margin: 0;
     list-style: none;
 }
 
-.header > .center > div > ul > li {
+.main > div:first-child > .center > div > ul > li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     height: 5rem;
 }
 
-.header > .center > div > ul > li > span {
+.main > div:first-child > .center > div > ul > li > span {
     color: #FFF;
     transition: color .25s linear;
     cursor: pointer;
     white-space: nowrap;
+    line-height: 1;
 }
 
-.header > .center > div > ul > li > span:hover,
-.header > .center > div > div > a > span:hover {
+.main > div:first-child > .center > div > ul > li > span:hover,
+.main > div:first-child > .center > div > div > a > span:hover {
     color: #BA0C2F;
 }
 
-.header > .center > div > div > a {
+.main > div:first-child > .center > div > div > a {
     padding-left: clamp(3.5rem, 6.75vw, 10rem);
     text-decoration: none;
     white-space: nowrap;
 }
 
-.header > .center > div > div > a > span {
+.main > div:first-child > .center > div > div > a > span {
     color: #FFF;
     transition: color .25s linear;
     cursor: pointer;
@@ -137,25 +138,17 @@ button > span:last-child {
     align-items: center;
 }
 
-.main > div:not(.gallery.object) > div:last-child > div > h1 {}
-
-.main > div:not(.gallery.object) > div:last-child > div > h1 > span {
+.main > .gallery.object + div > div:last-child > div > h1 > span {
     display: block;
 }
-
-
 
 @media (min-width : 1441px) {
     button {
         padding: 1rem 2rem;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 50%;
-    }
-
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
-        display: flex;
     }
 }
 
@@ -164,12 +157,8 @@ button > span:last-child {
         padding: 1rem 2rem;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 50%;
-    }
-
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
-        display: flex;
     }
 }
 
@@ -183,12 +172,8 @@ button > span:last-child {
         display: none;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 50%;
-    }
-
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
-        display: flex;
     }
 }
 
@@ -202,17 +187,13 @@ button > span:last-child {
         display: none;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 50%;
-    }
-
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
-        display: flex;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .header {
+    .main > div:first-child {
         display: none;
     }
 
@@ -225,11 +206,11 @@ button > span:last-child {
         display: none;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 100%;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
+    .main > .gallery.object + div > div:first-child {
         display: none;
     }
 
@@ -239,7 +220,7 @@ button > span:last-child {
 }
 
 @media (max-width : 480px) {
-    .header {
+    .main > div:first-child {
         display: none;
     }
 
@@ -252,11 +233,11 @@ button > span:last-child {
         display: none;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div {
+    .main > .gallery.object + div > div {
         width: 100%;
     }
 
-    .main > div:not(.gallery.object):not(.header) > div:first-child {
+    .main > .gallery.object + div > div:first-child {
         display: none;
     }
 

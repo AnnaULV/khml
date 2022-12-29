@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  bottom: clamp(3rem, 5.125vw,7.25rem);
-}
-
 .gallery {
     position: absolute;
     top: 0;
@@ -67,63 +60,70 @@
     background-position: center;
 }
 
-.swiper-pagination-bullet {
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: clamp(3rem, 5.125vw,7.25rem);
+}
+
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
     border-radius: 50%;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     cursor: pointer;
     transition: transform .25s ease-in-out;
     background-color: #F0F0F0;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet:hover,
-.swiper-pagination-bullet-active {
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:hover,
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
     transform: scale(1.35);
 }
 
-.swiper-pagination-bullet-active {
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
     background-color: #BA0C2F;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.main > .gallery.object + div > div:last-child > div > .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.main > .gallery.object + div > div:last-child > div > .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2rem;
 }
 
 @media (min-width : 1441px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: 0;
         margin-left: 0;
         text-align: center;
@@ -131,7 +131,7 @@
 }
 
 @media (max-width : 480px) {
-    .swiper-pagination {
+    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
         padding-left: 0;
         margin-left: 0;
         text-align: center;
