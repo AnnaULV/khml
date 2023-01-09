@@ -55,9 +55,8 @@
 
 .main > div:first-child > .center > div > ul > li {
     display: flex;
-    align-items: flex-start;
     justify-content: flex-end;
-    height: 5rem;
+    height: 4.5rem;
 }
 
 .main > div:first-child > .center > div > ul > li > span {
@@ -87,38 +86,6 @@
     font-weight: 500;
 }
 
-button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    height: 5rem;
-    padding: 1rem 2rem;
-    margin: 0 0 0 3.5rem;
-    border: 1px solid #FFF;
-    background-color: transparent;
-    border-radius: .5rem;
-}
-
-button > span:first-child {
-    width: 100%;
-    height: inherit;
-    background-image: url(../img/phone-forwarded.svg);
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-    background-position: 100% 50%;
-    transition: opacity .25s ease-in-out;
-    min-width: 3rem;
-}
-
-button > span:last-child {
-    margin-left: 1rem;
-    font-family: "content", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    color: #FFF;
-    white-space: nowrap;
-}
-
 .main > .gallery.object + div {
     display: flex;
     position: relative;
@@ -143,50 +110,24 @@ button > span:last-child {
 }
 
 @media (min-width : 1441px) {
-    button {
-        padding: 1rem 2rem;
-    }
-
     .main > .gallery.object + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    button {
-        padding: 1rem 2rem;
-    }
-
     .main > .gallery.object + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    button {
-        border: 0;
-        padding: 0;
-    }
-
-    button > span:last-child {
-        display: none;
-    }
-
     .main > .gallery.object + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    button {
-        border: 0;
-        padding: 0;
-    }
-
-    button > span:last-child {
-        display: none;
-    }
-
     .main > .gallery.object + div > div {
         width: 50%;
     }
@@ -194,15 +135,6 @@ button > span:last-child {
 
 @media (min-width : 481px) and (max-width : 720px) {
     .main > div:first-child {
-        display: none;
-    }
-
-    button {
-        border: 0;
-        padding: 0;
-    }
-
-    button > span:last-child {
         display: none;
     }
 
@@ -221,15 +153,6 @@ button > span:last-child {
 
 @media (max-width : 480px) {
     .main > div:first-child {
-        display: none;
-    }
-
-    button {
-        border: 0;
-        padding: 0;
-    }
-
-    button > span:last-child {
         display: none;
     }
 
