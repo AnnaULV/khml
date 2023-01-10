@@ -25,14 +25,14 @@ if ($(".gallery.object > .swiper-container > .swiper > .swiper-wrapper > .swiper
   return false;
 }); */
 
-var main = new Swiper(".main > .gallery.object > .swiper-container > .swiper", {
+
+$(document).ready(function () {
+
+new Swiper(".main > .gallery.object > .swiper-container > .swiper", {
     slidesPerView: 1,
-    lazy: {
-      loadPrevNext: true
-    },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: true
+      disableOnInteraction: false
     },
     effect: "fade",
     speed: 600,
@@ -44,3 +44,6 @@ var main = new Swiper(".main > .gallery.object > .swiper-container > .swiper", {
       clickable: true
     }
   });
+    
+  return false;
+}); 
