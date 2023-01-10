@@ -86,13 +86,13 @@
     font-weight: 500;
 }
 
-.main > .gallery.object + div {
+.main > .gallery + div {
     display: flex;
     position: relative;
     z-index: 2;
 }
 
-.main > .gallery.object + div > div:last-child > div {
+.main > .gallery + div > div:last-child > div {
     position: relative;
     width: 100%;
     padding-top: clamp(12.75rem, 27vw, 41.25rem);
@@ -105,30 +105,30 @@
     align-items: center;
 }
 
-.main > .gallery.object + div > div:last-child > div > h1 > span {
+.main > .gallery + div > div:last-child > div > h1 > span {
     display: block;
 }
 
 @media (min-width : 1441px) {
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 50%;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 50%;
     }
 }
@@ -138,15 +138,15 @@
         display: none;
     }
 
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 100%;
     }
 
-    .main > .gallery.object + div > div:first-child {
+    .main > .gallery + div > div:first-child {
         display: none;
     }
 
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         padding: 9rem 3rem 3rem 3rem;
     }
 }
@@ -156,15 +156,15 @@
         display: none;
     }
 
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         width: 100%;
     }
 
-    .main > .gallery.object + div > div:first-child {
+    .main > .gallery + div > div:first-child {
         display: none;
     }
 
-    .main > .gallery.object + div > div {
+    .main > .gallery + div > div {
         padding: 9rem 3rem 3rem 3rem;
     }
 }

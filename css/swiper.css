@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.main > .gallery.object {
+.main > .gallery {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,14 +10,14 @@
 }
 
 /* контейнер */
-.main > .gallery.object > .swiper-container {
+.main > .gallery > .swiper-container {
     /* относительное позиционирование */
     position: relative;
     height: 100%;
 }
 
 
-.main > .gallery.object > .swiper-container > .swiper {
+.main > .gallery > .swiper-container > .swiper {
     width: 100%;
     height: 100%;
     /* разрешаем видеть всю ширину экрана */
@@ -30,7 +30,7 @@
     z-index: 1;
 }
 
-.main > .gallery.object > .swiper-container > .swiper > .swiper-wrapper {
+.main > .gallery > .swiper-container > .swiper > .swiper-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -40,7 +40,7 @@
     box-sizing: content-box;
 }
 
-.main > .gallery.object > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
+.main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
@@ -48,82 +48,83 @@
     transition-property: opacity;
 }
 
-.main > .gallery.object > .swiper-container > .swiper-pointer-events {
+.main > .gallery > .swiper-container > .swiper-pointer-events {
     touch-action: pan-y;
 }
 
-.main > .gallery.object > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
+.main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-blend-mode: color, darken;
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+.main > .gallery + div > div:last-child > div > .swiper-pagination {
   position: absolute;
   left: 0;
   width: 100%;
   bottom: clamp(3rem, 5.125vw,7.25rem);
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet {
+.main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
     border-radius: 50%;
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+.main > .gallery + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     cursor: pointer;
     transition: transform .25s ease-in-out;
     background-color: #F0F0F0;
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:hover,
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
+.main > .gallery + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:hover,
+.main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
     transform: scale(1.35);
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
+.main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
     background-color: #BA0C2F;
 }
 
-.main > .gallery.object + div > div:last-child > div > .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.main > .gallery.object + div > div:last-child > div > .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.main > .gallery + div > div:last-child > div > .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.main > .gallery + div > div:last-child > div > .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2rem;
 }
 
 @media (min-width : 1441px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: clamp(3rem, 6.5vw, 10rem);
         margin-left: -2rem;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: 0;
         margin-left: 0;
         text-align: center;
@@ -131,7 +132,7 @@
 }
 
 @media (max-width : 480px) {
-    .main > .gallery.object + div > div:last-child > div > .swiper-pagination {
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
         padding-left: 0;
         margin-left: 0;
         text-align: center;
