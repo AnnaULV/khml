@@ -19,7 +19,7 @@ button::after {
     min-width: 5rem;
 }
 
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+.button.border {
     border: 1px solid #FFF;
     border-radius: .5rem;
 }
@@ -37,7 +37,7 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     min-width: 3rem;
 }
 
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button > span:first-child {
+body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon > span:first-child {
     background-image: url(../img/phone-forwarded.svg);
 }
 
@@ -49,7 +49,7 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     white-space: nowrap;
 }
 
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button > span:last-child {
+body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.text > span:last-child {
     margin-left: 1rem;
 }
 
@@ -66,44 +66,45 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
         border: 0;
         padding: 0;
     }
 
-    .button > span:last-child {
+    .button.text > span:last-child {
         display: none;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
         border: 0;
         padding: 0;
     }
     
-    .button > span:last-child {
+    .button.text > span:last-child {
         display: none;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
         border: 0;
         padding: 0;
     }
 
-    .button > span:last-child {
+    .button.text > span:last-child {
         display: none;
     }
 }
 
 @media (max-width : 480px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
         border: 0;
+        padding: 0;
     }
 
-    .button > span:last-child {
+    .button.text > span:last-child {
         display: none;
     }
 }
