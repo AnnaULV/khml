@@ -74,14 +74,6 @@ header > .center > ul::after {
     left: calc((100% - 100vw)/2);
 }
 
-header > .center > ul > li:not(:last-child) {
-    margin: 0 1.5rem;
-}
-
-header > .center > ul > li:last-child {
-    margin: 0 0 0 1.5rem;
-}
-
 header > .center > ul > li > span {
     color: #323232;
     transition: color .25s linear;
@@ -93,13 +85,45 @@ header > .center > ul > li > span:hover {
     color: #BA0C2F;
 }
 
-@media (min-width : 1441px) {}
+@media (min-width : 1441px) {
+    header > .center > ul > li:not(:last-child) {
+    margin: 0 1.5rem;
+}
 
-@media (min-width : 1201px) and (max-width : 1440px) {}
+header > .center > ul > li:last-child {
+    margin: 0 0 0 1.5rem;
+}
+}
 
-@media (min-width : 961px) and (max-width : 1200px) {}
+@media (min-width : 1201px) and (max-width : 1440px) {
+     header > .center > ul > li:not(:last-child) {
+    margin: 0 1.5rem;
+}
 
-@media (min-width : 721px) and (max-width : 960px) {}
+header > .center > ul > li:last-child {
+    margin: 0 0 0 1.5rem;
+}
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+    header > .center > ul > li:not(:last-child) {
+    margin: 0 1.5rem;
+}
+
+header > .center > ul > li:last-child {
+    margin: 0 0 0 1.5rem;
+}
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+    header > .center > ul > li:not(:last-child) {
+    margin: 0 1.5rem;
+}
+
+header > .center > ul > li:last-child {
+    margin: 0 0 0 1.5rem;
+}
+}
 
 @media (min-width : 481px) and (max-width : 720px) {
     header.opened {
@@ -109,6 +133,11 @@ header > .center > ul > li > span:hover {
     header.opened > .center > ul {
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    header > .center > ul > li {
+        margin-bottom: 2.5rem;
+        width: 100%;
     }
 
     header > .center > .logo + div > a {
@@ -124,6 +153,11 @@ header > .center > ul > li > span:hover {
     header.opened > .center > ul {
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    header > .center > ul > li {
+        margin-bottom: 2.5rem;
+        width: 100%;
     }
 
     header > .center > .logo + div > a {
