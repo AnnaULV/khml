@@ -167,6 +167,7 @@ header > .center > ul > li > span:hover {
 
 @media (max-width : 480px) {
     header.opened {
+        position: fixed;
         overflow-y: auto;
         overflow-x: hidden;
         height: 100%;
