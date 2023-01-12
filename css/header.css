@@ -151,6 +151,11 @@ header > .center > ul > li > span:hover {
         margin: 0 0 2.5rem 5.5rem;
         width: 100%;
     }
+    
+    header > .center > ul > li:last-child{
+        position: absolute;
+        bottom: 0;
+    }
 
     header > .center > .logo + div > a {
         display: none;
@@ -170,6 +175,11 @@ header > .center > ul > li > span:hover {
     header > .center > ul > li {
         margin: 0 0 2.5rem 5.5rem;
         width: 100%;
+    }
+    
+    header > .center > ul > li:last-child{
+        position: absolute;
+        bottom: 0;
     }
 
     header > .center > .logo + div > a {

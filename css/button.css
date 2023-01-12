@@ -41,6 +41,14 @@ header > .center > ul > li > .button {
     border-radius: .5rem;
 }
 
+header > .center > ul > li > .button:hover {
+    background-color: #323232;
+}
+
+header > .center > ul > li > .button.text:hover >span {
+    color: #FFF;
+}
+
 .button.icon > span:first-child {
     width: 100%;
     height: inherit;
