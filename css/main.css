@@ -59,7 +59,6 @@
     transition: color .25s linear;
     cursor: pointer;
     white-space: nowrap;
-    line-height: 1;
 }
 
 .main > div:first-child > .center > div > ul > li > span:hover,
