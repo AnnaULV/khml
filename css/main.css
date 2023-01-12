@@ -140,7 +140,7 @@
     }
 
     .main > .gallery + div > div {
-        padding: 9rem 3rem 3rem 3rem;
+        padding: 0 3rem 3rem 3rem;
     }
 }
 
@@ -158,6 +158,6 @@
     }
 
     .main > .gallery + div > div {
-        padding: 9rem 3rem 3rem 3rem;
+        padding: 0 3rem 3rem 3rem;
     }
 }
