@@ -93,25 +93,39 @@ header > .center > ul > li > span:hover {
     color: #BA0C2F;
 }
 
-@media (min-width : 1441px) {
-}
+@media (min-width : 1441px) {}
 
-@media (min-width : 1201px) and (max-width : 1440px) {
-}
+@media (min-width : 1201px) and (max-width : 1440px) {}
 
-@media (min-width : 961px) and (max-width : 1200px) {
-}
+@media (min-width : 961px) and (max-width : 1200px) {}
 
-@media (min-width : 721px) and (max-width : 960px) {
-}
+@media (min-width : 721px) and (max-width : 960px) {}
 
 @media (min-width : 481px) and (max-width : 720px) {
+    header.opened {
+        position: fixed;
+    }
+
+    header.opened > .center > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     header > .center > .logo + div > a {
         display: none;
     }
 }
 
 @media (max-width : 480px) {
+    header.opened {
+        position: fixed;
+    }
+
+    header.opened > .center > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     header > .center > .logo + div > a {
         display: none;
     }
