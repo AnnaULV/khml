@@ -86,54 +86,54 @@ header > .center > ul > li > span:hover {
 }
 
 @media (min-width : 1441px) {
-    header > .center > ul > li:not(:last-child) {
-    margin: 0 1.5rem;
-}
+    header > .center > ul > li {
+        margin: 0 0 0 3rem;
+    }
 
-header > .center > ul > li:last-child {
-    margin: 0 0 0 1.5rem;
-}
+    header > .center > ul > li:last-child {
+        display: none;
+    }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-     header > .center > ul > li:not(:last-child) {
-    margin: 0 1.5rem;
-}
+    header > .center > ul > li {
+        margin: 0 0 0 3rem;
+    }
 
-header > .center > ul > li:last-child {
-    margin: 0 0 0 1.5rem;
-}
-    
+    header > .center > ul > li:last-child {
+        display: none;
+    }
+
     header > .center > .logo + div > a {
-     margin-right: 3rem;   
+        margin-right: 3rem;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    header > .center > ul > li:not(:last-child) {
-    margin: 0 1.5rem;
-}
+    header > .center > ul > li {
+        margin: 0 0 0 3rem;
+    }
 
-header > .center > ul > li:last-child {
-    margin: 0 0 0 1.5rem;
-}
-    
+    header > .center > ul > li:last-child {
+        display: none;
+    }
+
     header > .center > .logo + div > a {
-     margin-right: 1rem;   
+        margin-right: 1rem;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    header > .center > ul > li:not(:last-child) {
-    margin: 0 1.5rem;
-}
+    header > .center > ul > li {
+        margin: 0 0 0 3rem;
+    }
 
-header > .center > ul > li:last-child {
-    margin: 0 0 0 1.5rem;
-}
-    
+    header > .center > ul > li:last-child {
+        display: none;
+    }
+
     header > .center > .logo + div > a {
-     margin-right: 1rem;   
+        margin-right: 1rem;
     }
 }
 
