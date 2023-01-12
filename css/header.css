@@ -140,6 +140,8 @@ header > .center > ul > li > span:hover {
 @media (min-width : 481px) and (max-width : 720px) {
     header.opened {
         position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     header.opened > .center > ul {
@@ -151,8 +153,8 @@ header > .center > ul > li > span:hover {
         margin: 0 0 2.5rem 5.5rem;
         width: 100%;
     }
-    
-    header > .center > ul > li:last-child{
+
+    header > .center > ul > li:last-child {
         position: absolute;
         bottom: 0;
     }
@@ -165,6 +167,8 @@ header > .center > ul > li > span:hover {
 @media (max-width : 480px) {
     header.opened {
         position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     header.opened > .center > ul {
@@ -176,8 +180,8 @@ header > .center > ul > li > span:hover {
         margin: 0 0 2.5rem 5.5rem;
         width: 100%;
     }
-    
-    header > .center > ul > li:last-child{
+
+    header > .center > ul > li:last-child {
         position: absolute;
         bottom: 0;
     }
