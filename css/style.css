@@ -44,6 +44,15 @@ a:hover {
     overflow-x: hidden;
 }
 
+.square.burger {
+  position: relative;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
 
 h1 {
     font-size: clamp(4rem, 5.75vw, 7.5rem);

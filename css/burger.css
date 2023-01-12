@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-.square.burger {
-  position: relative;
-}
-
-.square {
-  width: 5rem;
-  height: 5rem;
-  cursor: pointer;
-}
-
 .burger {
     display: block;
     margin-left: 1.5rem;
