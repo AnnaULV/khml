@@ -56,3 +56,15 @@ $(window).on("resize", function () {
   /* повторный вызов функции — после того, как документ полностью загружен (корректировка отображения элементов) */
   isReady();
 });
+
+  $(document).on("touchend mouseup", ".square", function (e) {
+    if ($("header").length && $(this).hasClass("burger")) {
+      if ($("header").hasClass("opened")) {
+        $("header").removeClass("opened");
+      }
+      else {
+        $("header").addClass("opened");
+      }
+    }
+    e.preventDefault();
+  });

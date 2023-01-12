@@ -13,11 +13,6 @@
 }
 
 .main > div:first-child > .center {
-    position: relative;
-    margin: 0 auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    max-width: 146rem;
     width: 100%;
     display: flex;
 }

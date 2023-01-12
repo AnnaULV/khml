@@ -24,6 +24,10 @@ button::after {
     border-radius: .5rem;
 }
 
+header > .center > div > .button.border {
+    border: 1px solid #323232;
+}
+
 .button.transparent {
    background-color: rgba(255, 255, 255, 0); 
 }
@@ -41,6 +45,10 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     background-image: url(../img/phone-forwarded.svg);
 }
 
+header > .center > div > .button.icon > span:first-child   {
+    background-image: url(../img/phone-black.svg);
+}
+
 .button.text > span:last-child {
     font-family: "content", sans-serif;
     font-size: 2rem;
@@ -49,24 +57,32 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     white-space: nowrap;
 }
 
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.text > span:last-child {
+header > .center > div > .button.text > span:last-child  {
+    color: #323232;
+}
+
+body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.text > span:last-child,
+header > .center > div > .button.text > span:last-child {
     margin-left: 1rem;
 }
 
 @media (min-width : 1441px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button,
+    header > .center > div > .button {
         padding: 0 2rem;
     }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button,
+    header > .center > div > .button {
         padding: 0 2rem;
     }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border,
+    header > .center > div > .button.border {
         border: 0;
         padding: 0;
     }
@@ -77,7 +93,8 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border,
+    header > .center > div > .button.border {
         border: 0;
         padding: 0;
     }
@@ -88,7 +105,8 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border,
+    header > .center > div > .button.border {
         border: 0;
         padding: 0;
     }
@@ -99,7 +117,8 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
 }
 
 @media (max-width : 480px) {
-    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border {
+    body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.border,
+    header > .center > div > .button.border {
         border: 0;
         padding: 0;
     }

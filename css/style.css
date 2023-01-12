@@ -54,6 +54,15 @@ h3 {
 
 }
 
+.center {
+    position: relative;
+    max-width: 146rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
 @media (min-width : 1441px) {
 
 }
