@@ -13,7 +13,6 @@
 }
 
 .main > div:first-child > .center {
-    width: 100%;
     display: flex;
 }
 
