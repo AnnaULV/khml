@@ -32,6 +32,15 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
    background-color: rgba(255, 255, 255, 0); 
 }
 
+.button.red {
+    background-color: #BA0C2F;
+}
+
+header > .center > ul > li > .button {
+   padding: 2.5rem 4.5rem;
+    border-radius: .5rem;
+}
+
 .button.icon > span:first-child {
     width: 100%;
     height: inherit;
@@ -73,25 +82,25 @@ header > .center > div > .button.text > span:last-child {
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .button.text > span:last-child {
+    .button.text.transparent > span:last-child {
         display: none;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-      .button.text > span:last-child {
+      .button.text.transparent > span:last-child {
         display: none;
     }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .button.text > span:last-child {
+    .button.text.transparent > span:last-child {
         display: none;
     }
 }
 
 @media (max-width : 480px) {
-    .button.text > span:last-child {
+    .button.text.transparent > span:last-child {
         display: none;
     }
 }
