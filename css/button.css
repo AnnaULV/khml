@@ -20,7 +20,7 @@ button::after {
 }
 
 body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button,
-    header > .center > div > .button {
+    header > .center > div > .button.transparent.text {
         padding: 0;
     }
 
@@ -36,16 +36,16 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     background-color: #BA0C2F;
 }
 
-header > .center > ul > li > .button {
+header > .center > div:last-child > div > .button.red {
    padding: 2.5rem 4.5rem;
     border-radius: .5rem;
 }
 
-header > .center > ul > li > .button:hover {
+header > .center > div:last-child > div > .button.red:hover {
     background-color: #323232;
 }
 
-header > .center > ul > li > .button.text:hover >span {
+header > .center > div:last-child > div > .button.red.text:hover > span {
     color: #FFF;
 }
 
@@ -74,7 +74,7 @@ header > .center > div > .button.icon > span:first-child   {
     white-space: nowrap;
 }
 
-header > .center > div > .button.text > span:last-child  {
+header > .center > div > .button.transparent.text > span:last-child  {
     color: #323232;
 }
 

@@ -9,7 +9,7 @@
 }
 
 @media (max-width : 720px) {
-    header.opened > .center > ul {
+    header.opened > .center > div:last-child {
         min-height: calc(var(--vh, 1vh) * 100 - 10rem);
     }
 }

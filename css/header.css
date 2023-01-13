@@ -50,21 +50,27 @@ header > .center > .logo + div > a > span:hover {
     color: #BA0C2F;
 }
 
-header.opened > .center > ul {
-    position: relative;
+header.opened > .center > div:last-child {
+    width: 100%;
+    background-color: #FFF;
+    margin-top: 0;
+}
+
+header.opened > .center > div:last-child > ul {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     margin: 0;
     padding: 2.5rem 0;
     list-style: none;
+    position: relative;
+    width: 100%;
 }
 
-header:not(.opened) > .center > ul {
+header:not(.opened) > .center > div:last-child {
     display: none;
 }
 
-header > .center > ul::after {
+header.opened > .center > div:last-child::after {
     position: absolute;
     content: "";
     width: 100vw;
@@ -74,90 +80,126 @@ header > .center > ul::after {
     left: calc((100% - 100vw)/2);
 }
 
-header > .center > ul > li > span {
+header > .center > div:last-child > ul > li > span {
     color: #323232;
     transition: color .25s linear;
     cursor: pointer;
     white-space: nowrap;
 }
 
-header > .center > ul > li > span:hover {
+header > .center > div:last-child > ul > li > span:hover {
     color: #BA0C2F;
 }
 
 @media (min-width : 1441px) {
-    header > .center > ul > li {
+    header.opened > .center > div:last-child {
+        position: relative;
+        margin-top: 0;
+    }
+
+    header > .center > div:last-child > ul > li {
         margin: 0 0 0 3rem;
-    }
-
-    header > .center > ul > li:last-child {
-        display: none;
-    }
-}
-
-@media (min-width : 1201px) and (max-width : 1440px) {
-    header > .center > ul > li {
-        margin: 0 0 0 3rem;
-    }
-
-    header > .center > ul > li:last-child {
-        display: none;
     }
 
     header > .center > .logo + div > a {
         margin-right: 3rem;
     }
+
+    header.opened > .center > div:last-child > div {
+        display: none;
+    }
 }
 
-@media (min-width : 961px) and (max-width : 1200px) {
-    header > .center > ul > li {
+@media (min-width : 1201px) and (max-width : 1440px) {
+    header.opened > .center > div:last-child {
+        position: relative;
+        margin-top: 0;
+    }
+
+    header > .center > div:last-child > ul > li {
         margin: 0 0 0 3rem;
     }
 
-    header > .center > ul > li:last-child {
+    header > .center > .logo + div > a {
+        margin-right: 3rem;
+    }
+
+    header.opened > .center > div:last-child > div {
         display: none;
+    }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+    header.opened > .center > div:last-child {
+        position: relative;
+        margin-top: 0;
+    }
+
+    header > .center > div:last-child > ul > li {
+        margin: 0 0 0 3rem;
     }
 
     header > .center > .logo + div > a {
         margin-right: 1rem;
+    }
+
+    header.opened > .center > div:last-child > div {
+        display: none;
     }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    header > .center > ul > li {
-        margin: 0 0 0 3rem;
+    header.opened > .center > div:last-child {
+        position: relative;
+        margin-top: 0;
     }
 
-    header > .center > ul > li:last-child {
-        display: none;
+    header > .center > div:last-child > ul > li {
+        margin: 0 0 0 3rem;
     }
 
     header > .center > .logo + div > a {
         margin-right: 1rem;
     }
+
+    header.opened > .center > div:last-child > div {
+        display: none;
+    }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    header.opened {
-        position: fixed;
-        overflow-y: auto;
+    header.opened > .center > div:last-child {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
         overflow-x: hidden;
         height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        margin-top: 10rem;
+        padding-bottom: 3rem;
     }
 
-    header.opened > .center > ul {
+    header.opened {
+        position: fixed;
+    }
+    
+    header > .center > div:last-child > div {
+        margin-left: 8.5rem
+    }
+
+    header.opened > .center > div:last-child > ul {
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 8.5rem
     }
 
-    header > .center > ul > li {
-        margin: 0 0 2.5rem 5.5rem;
+    header > .center > div:last-child > ul > li {
+        margin: 0 0 2.5rem 0;
         width: 100%;
-    }
-
-    header > .center > ul > li:last-child {
-        position: absolute;
-        bottom: 0;
     }
 
     header > .center > .logo + div > a {
@@ -168,24 +210,36 @@ header > .center > ul > li > span:hover {
 @media (max-width : 480px) {
     header.opened {
         position: fixed;
-        overflow-y: auto;
+    }
+    
+    header.opened > .center > div:last-child {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
         overflow-x: hidden;
         height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        margin-top: 10rem;
+        padding-bottom: 3rem;
+    }
+    
+    header > .center > div:last-child > div {
+        margin-left: 8.5rem
     }
 
-    header.opened > .center > ul {
+    header.opened > .center > div:last-child > ul {
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 8.5rem
     }
 
-    header > .center > ul > li {
-        margin: 0 0 2.5rem 5.5rem;
+    header > .center > div:last-child > ul > li {
+        margin: 0 0 2.5rem 0;
         width: 100%;
-    }
-
-    header > .center > ul > li:last-child {
-        position: absolute;
-        bottom: 0;
     }
 
     header > .center > .logo + div > a {
