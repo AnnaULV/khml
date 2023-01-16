@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+footer {
+    background-color: #323232;
+    color: #FFF;
+}
+
+footer > div {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer > .center > span {
+    font-weight: 400;
+}
+
+.developer {
+    display: block;
+    position: relative;
+    min-width: 17.5rem;
+    height: 5rem;
+    background-image: url(../img/developer.svg);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.developer::before {
+    display: block;
+    position: absolute;
+    top: calc(100% - 1.2rem);
+    right: 0;
+    z-index: 10;
+    content: "разработка сайта";
+    white-space: nowrap;
+    transition: color .25s linear;
+    color: #969696;
+    font-family: sans-serif;
+}
+
+.developer:hover::before {
+  color: #FFFFFF;
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+    footer > .space__between {
+    flex-wrap: wrap;
+}
+    
+    footer > div > span {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+    footer > .space__between {
+    flex-wrap: wrap;
+}
+    
+    footer > div > span {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+}
+
+@media (max-width : 480px) {
+    footer > .space__between {
+    flex-wrap: wrap;
+}
+    
+    footer > div > span {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+}
+
+

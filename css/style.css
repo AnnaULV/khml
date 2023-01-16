@@ -45,13 +45,13 @@ a:hover {
 }
 
 .square.burger {
-  position: relative;
+    position: relative;
 }
 
 .square {
-  width: 5rem;
-  height: 5rem;
-  cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
 }
 
 h1 {
@@ -60,9 +60,7 @@ h1 {
 }
 
 h2,
-h3 {
-
-}
+h3 {}
 
 .center {
     position: relative;
@@ -70,29 +68,24 @@ h3 {
     margin: 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
-    
-}
-
-@media (min-width : 1441px) {
 
 }
 
-@media (min-width : 1201px) and (max-width : 1440px) {
-
+.space__between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
 }
 
-@media (min-width : 961px) and (max-width : 1200px) {
+@media (min-width : 1441px) {}
 
-}
+@media (min-width : 1201px) and (max-width : 1440px) {}
 
-@media (min-width : 721px) and (max-width : 960px) {
+@media (min-width : 961px) and (max-width : 1200px) {}
 
-}
+@media (min-width : 721px) and (max-width : 960px) {}
 
-@media (min-width : 481px) and (max-width : 720px) {
+@media (min-width : 481px) and (max-width : 720px) {}
 
-}
-
-@media (max-width : 480px) {
-
-}
+@media (max-width : 480px) {}
