@@ -3,5 +3,33 @@
 article {
     position: relative;
     flex-grow: 1;
-    margin-top: -10rem;
+}
+
+article > div:not(.main) {
+    height: 1000px;
+    background-color: cornsilk;
+}
+
+@media (min-width : 1441px) {
+}
+
+@media (min-width : 1201px) and (max-width : 1440px) {
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+    article {
+        margin-top: -10rem;
+    }
+}
+
+@media (max-width : 480px) {
+    article {
+        margin-top: -10rem;
+    }
 }

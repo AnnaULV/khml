@@ -31,6 +31,14 @@
   background-color: #323232;
 }
 
+header:not(.scroll) .burger > ul > li {
+    background-color: #fff;
+}
+
+header.scroll .burger > ul > li {
+    background-color: #323232;
+}
+
 .burger > ul > li:first-child,
 .burger > ul > li:nth-child(2) {
   top: calc(50% - 1px);

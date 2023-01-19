@@ -3,10 +3,17 @@
 header {
     position: sticky;
     left: 0;
-    top: 0;
     width: 100%;
     z-index: 10;
-    background-color: #FFFFFF;
+}
+
+header:not(.scroll) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header.scroll {
+    top: 0;
+    margin-top: 0;
 }
 
 header > .center {
@@ -19,10 +26,18 @@ header > .center {
 header > .center > .logo {
     width: clamp(22rem, 23.5vw, 25rem);
     height: 5rem;
-    background-image: url(../img/logo_mini.svg);
+    background-image: url(../img/logo_mini_black.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 50%;
+}
+
+header.scroll > .center > .logo {
+    background-image: url(../img/logo_mini_black.svg);
+}
+
+header:not(.scroll) > .center > .logo {
+    background-image: url(../img/logo_mini_white.svg);
 }
 
 header > .center > .logo + div {
@@ -50,9 +65,13 @@ header > .center > .logo + div > a > span:hover {
     color: #BA0C2F;
 }
 
+header.scroll, 
+header.opened {
+    background-color: #FFF;
+}
+
 header.opened > .center > div:last-child {
     width: 100%;
-    background-color: #FFF;
     margin-top: 0;
 }
 
@@ -92,6 +111,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1441px) {
+    header:not(.scroll) {
+    margin-top: -10rem;
+}
+
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -111,6 +134,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
+    header:not(.scroll) {
+    margin-top: -10rem;
+}
+    
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -130,6 +157,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
+    header:not(.scroll) {
+    margin-top: -10rem;
+}
+    
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -149,6 +180,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
+    header:not(.scroll) {
+    margin-top: -10rem;
+}
+    
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -168,6 +203,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
+    header:not(.scroll) {
+    margin-top: 0;
+}
+    
     header.opened > .center > div:last-child {
         position: absolute;
         display: flex;
@@ -208,6 +247,10 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (max-width : 480px) {
+    header:not(.scroll) {
+    margin-top: 0;
+}
+    
     header.opened {
         position: fixed;
     }

@@ -62,7 +62,11 @@ body > .wrapper > .workspace > article > .main > div:first-child > .center > div
     background-image: url(../img/phone-forwarded.svg);
 }
 
-header > .center > div > .button.icon > span:first-child   {
+header:not(.scroll) > .center > div > .button.icon > span:first-child   {
+    background-image: url(../img/phone-forwarded.svg);
+}
+
+header.scroll > .center > div > .button.icon > span:first-child   {
     background-image: url(../img/phone-black.svg);
 }
 
