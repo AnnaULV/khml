@@ -31,11 +31,13 @@
   background-color: #323232;
 }
 
-header:not(.scroll) .burger > ul > li {
+header:not(.scroll) .burger > ul > li
+ {
     background-color: #fff;
 }
 
-header.scroll .burger > ul > li {
+header.scroll .burger > ul > li,
+header.opened:not(.scroll) .burger > ul > li {
     background-color: #323232;
 }
 

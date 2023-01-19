@@ -26,13 +26,13 @@ header > .center {
 header > .center > .logo {
     width: clamp(22rem, 23.5vw, 25rem);
     height: 5rem;
-    background-image: url(../img/logo_mini_black.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 50%;
 }
 
-header.scroll > .center > .logo {
+header.scroll > .center > .logo,
+header.opened:not(.scroll) > .center > .logo {
     background-image: url(../img/logo_mini_black.svg);
 }
 

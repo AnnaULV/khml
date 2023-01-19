@@ -58,15 +58,13 @@ header > .center > div:last-child > div > .button.red.text:hover > span {
     min-width: 3rem;
 }
 
+header:not(.scroll) > .center > div > .button.icon > span:first-child,
 body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon > span:first-child {
     background-image: url(../img/phone-forwarded.svg);
 }
 
-header:not(.scroll) > .center > div > .button.icon > span:first-child   {
-    background-image: url(../img/phone-forwarded.svg);
-}
-
-header.scroll > .center > div > .button.icon > span:first-child   {
+header.scroll > .center > div > .button.icon > span:first-child, 
+header.opened:not(.scroll) > .center > div > .button.icon > span:first-child {
     background-image: url(../img/phone-black.svg);
 }
 
