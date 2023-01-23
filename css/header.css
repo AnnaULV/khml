@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 header {
+    position: fixed;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -110,9 +111,6 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1441px) {
-    header {
-        position: fixed;
-    }
 
     header:not(.scroll) {
         top: -10rem;
@@ -137,9 +135,6 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    header {
-        position: fixed;
-    }
 
     header:not(.scroll) {
         top: -10rem;
@@ -164,9 +159,6 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    header {
-        position: fixed;
-    }
 
     header:not(.scroll) {
         top: -10rem;
@@ -191,9 +183,7 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    header {
-        position: fixed;
-    }
+
 
     header:not(.scroll) {
         top: -10rem;
@@ -218,13 +208,6 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    header.scroll {
-        position: sticky;
-    }
-
-    header:not(.scroll) {
-        position: relative;
-    }
 
     header.opened > .center > div:last-child {
         position: absolute;
@@ -239,10 +222,6 @@ header > .center > div:last-child > ul > li > span:hover {
         background-color: #FFF;
         margin-top: 10rem;
         padding-bottom: 3rem;
-    }
-
-    header.opened {
-        position: fixed;
     }
 
     header > .center > div:last-child > div {
@@ -266,18 +245,6 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (max-width : 480px) {
-    header.scroll {
-        position: sticky;
-    }
-
-    header:not(.scroll) {
-        position: relative;
-    }
-
-    header.opened {
-        position: fixed;
-    }
-
     header.opened > .center > div:last-child {
         position: absolute;
         display: flex;

@@ -23,13 +23,9 @@ article > div:not(.main) {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    article {
-        margin-top: -10rem;
-    }
+   
 }
 
 @media (max-width : 480px) {
-    article {
-        margin-top: -10rem;
-    }
+
 }
