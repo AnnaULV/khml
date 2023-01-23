@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 header {
-    position: sticky;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -13,7 +12,7 @@ header:not(.scroll) {
 
 header.scroll {
     top: 0;
-    margin-top: 0;
+    transition: top .25s linear;
 }
 
 header > .center {
@@ -65,7 +64,7 @@ header > .center > .logo + div > a > span:hover {
     color: #BA0C2F;
 }
 
-header.scroll, 
+header.scroll,
 header.opened {
     background-color: #FFF;
 }
@@ -111,9 +110,13 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1441px) {
+    header {
+        position: fixed;
+    }
+
     header:not(.scroll) {
-    margin-top: -10rem;
-}
+        top: -10rem;
+    }
 
     header.opened > .center > div:last-child {
         position: relative;
@@ -134,10 +137,14 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
+    header {
+        position: fixed;
+    }
+
     header:not(.scroll) {
-    margin-top: -10rem;
-}
-    
+        top: -10rem;
+    }
+
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -157,10 +164,14 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
+    header {
+        position: fixed;
+    }
+
     header:not(.scroll) {
-    margin-top: -10rem;
-}
-    
+        top: -10rem;
+    }
+
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -180,10 +191,14 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
+    header {
+        position: fixed;
+    }
+
     header:not(.scroll) {
-    margin-top: -10rem;
-}
-    
+        top: -10rem;
+    }
+
     header.opened > .center > div:last-child {
         position: relative;
         margin-top: 0;
@@ -203,10 +218,14 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
+    header.scroll {
+        position: sticky;
+    }
+
     header:not(.scroll) {
-    margin-top: 0;
-}
-    
+        position: relative;
+    }
+
     header.opened > .center > div:last-child {
         position: absolute;
         display: flex;
@@ -225,7 +244,7 @@ header > .center > div:last-child > ul > li > span:hover {
     header.opened {
         position: fixed;
     }
-    
+
     header > .center > div:last-child > div {
         margin-left: 8.5rem
     }
@@ -247,14 +266,18 @@ header > .center > div:last-child > ul > li > span:hover {
 }
 
 @media (max-width : 480px) {
+    header.scroll {
+        position: sticky;
+    }
+
     header:not(.scroll) {
-    margin-top: 0;
-}
-    
+        position: relative;
+    }
+
     header.opened {
         position: fixed;
     }
-    
+
     header.opened > .center > div:last-child {
         position: absolute;
         display: flex;
@@ -269,7 +292,7 @@ header > .center > div:last-child > ul > li > span:hover {
         margin-top: 10rem;
         padding-bottom: 3rem;
     }
-    
+
     header > .center > div:last-child > div {
         margin-left: 8.5rem
     }
