@@ -20,7 +20,7 @@
     width: calc(33.3333% - 2rem);
     padding-top: clamp(4rem, 5vw, 6rem);
     flex-wrap: wrap;
-    height: max-content;
+    align-content: flex-start;
     margin-right: 1rem;
     margin-left: 1rem;
     min-width: 32rem;

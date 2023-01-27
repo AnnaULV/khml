@@ -71,7 +71,7 @@ header.opened:not(.scroll) > .center > div > .button.icon > span:first-child {
 .button.text > span:last-child {
     font-family: "content", sans-serif;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #FFF;
     white-space: nowrap;
 }
