@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+article > .image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: min(calc(100%/3*2), 44rem);
+}
+
+@media (min-width : 1441px) {}
+
+@media (min-width : 1201px) and (max-width : 1440px) {}
+
+@media (min-width : 961px) and (max-width : 1200px) {}
+
+@media (min-width : 721px) and (max-width : 960px) {}
+
+@media (min-width : 481px) and (max-width : 720px) {}
+
+@media (max-width : 480px) {}

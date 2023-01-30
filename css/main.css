@@ -1,163 +1,166 @@
 @charset "UTF-8";
 
 .main {
-    position: relative;
+  position: relative;
 }
 
 .main > div:first-child {
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-    padding-top: 7rem;
-    top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  padding-top: 7rem;
+  top: 0;
 }
 
 .main > div:first-child > .center {
-    display: flex;
+  display: flex;
 }
 
 .main > div:first-child > .center > div {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main > div:first-child > .center > div:last-child > div {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .main > div:first-child > .center > div > span {
-    background-image: url(../img/logo.svg);
-    width: clamp(21.25rem, 23.125vw, 25rem);
-    height: clamp(15.93rem, 17.34vw, 18.75rem);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0% 0%;
-    cursor: pointer;
-    display: block;
+  background-image: url(../img/logo.svg);
+  width: clamp(21.25rem, 23.125vw, 25rem);
+  height: clamp(15.93rem, 17.34vw, 18.75rem);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 0%;
+  cursor: pointer;
+  display: block;
 }
 
 .main > div:first-child > .center > div > ul {
-    padding: 0 5rem 0 0;
-    margin: 0;
-    list-style: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: clamp(2.5rem, 3.75vw, 5rem);
+  margin: 0;
+  list-style: none;
 }
 
 .main > div:first-child > .center > div > ul > li {
-    display: flex;
-    justify-content: flex-end;
-    height: 4.5rem;
+  display: flex;
+  justify-content: flex-end;
+  height: 4.5rem;
 }
 
 .main > div:first-child > .center > div > ul > li > span {
-    color: #FFF;
-    transition: color .25s linear;
-    cursor: pointer;
-    white-space: nowrap;
+  color: #FFF;
+  transition: color .25s linear;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .main > div:first-child > .center > div > ul > li > span:hover,
 .main > div:first-child > .center > div > div > a > span:hover {
-    color: #BA0C2F;
+  color: #BA0C2F;
 }
 
 .main > div:first-child > .center > div > div > a {
-    padding-left: clamp(3.5rem, 6.75vw, 10rem);
-    text-decoration: none;
-    white-space: nowrap;
+  padding-left: clamp(5rem, 7.5vw, 10rem);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .main > div:first-child > .center > div > div > a > span {
-    color: #FFF;
-    transition: color .25s linear;
-    cursor: pointer;
-    font-size: 3.25rem;
-    font-weight: 500;
+  color: #FFF;
+  transition: color .25s linear;
+  cursor: pointer;
+  font-size: 3.25rem;
+  font-weight: 500;
 }
 
 .main > .gallery + div {
-    display: flex;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  position: relative;
+  z-index: 2;
 }
 
 .main > .gallery + div > div:last-child > div {
-    position: relative;
-    width: 100%;
-    padding-top: clamp(12.75rem, 27vw, 41.25rem);
-    padding-right: clamp(3rem, 6.5vw, 10rem);
-    padding-left: clamp(5.5rem, 6vw, 10rem);
-    padding-bottom: clamp(16.25rem, 23.125vw, 30rem);
-    height: 100%;
-    background-color: rgba(0, 0, 0, .6);
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: clamp(12.75rem, 27vw, 41.25rem);
+  padding-right: clamp(3rem, 6.5vw, 10rem);
+  padding-left: clamp(5rem, 7.5vw, 10rem);
+  padding-bottom: clamp(16.25rem, 23.125vw, 30rem);
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
 }
 
 .main > .gallery + div > div:last-child > div > h1 > span {
-    display: block;
+  display: block;
 }
 
 @media (min-width : 1441px) {
-    .main > .gallery + div > div {
-        width: 50%;
-    }
+  .main > .gallery + div > div {
+    width: 50%;
+  }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .main > .gallery + div > div {
-        width: 50%;
-    }
+  .main > .gallery + div > div {
+    width: 50%;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .main > .gallery + div > div {
-        width: 50%;
-    }
+  .main > .gallery + div > div {
+    width: 50%;
+  }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .main > .gallery + div > div {
-        width: 50%;
-    }
+  .main > .gallery + div > div {
+    width: 50%;
+  }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .main > div:first-child {
-        display: none;
-    }
+  .main > div:first-child {
+    display: none;
+  }
 
-    .main > .gallery + div > div {
-        width: 100%;
-    }
+  .main > .gallery + div > div {
+    width: 100%;
+  }
 
-    .main > .gallery + div > div:first-child {
-        display: none;
-    }
+  .main > .gallery + div > div:first-child {
+    display: none;
+  }
 
-    .main > .gallery + div > div {
-        padding: 10rem 3rem 3rem 3rem;
-    }
+  .main > .gallery + div > div {
+    padding: 10rem 3rem 3rem 3rem;
+  }
 }
 
 @media (max-width : 480px) {
-    .main > div:first-child {
-        display: none;
-    }
+  .main > div:first-child {
+    display: none;
+  }
 
-    .main > .gallery + div > div {
-        width: 100%;
-    }
+  .main > .gallery + div > div {
+    width: 100%;
+  }
 
-    .main > .gallery + div > div:first-child {
-        display: none;
-    }
+  .main > .gallery + div > div:first-child {
+    display: none;
+  }
 
-    .main > .gallery + div > div {
-        padding: 10rem 3rem 3rem 3rem;
-    }
+  .main > .gallery + div > div {
+    padding: 10rem 3rem 3rem 3rem;
+  }
 }

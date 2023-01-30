@@ -59,6 +59,10 @@ h1 {
     font-weight: 700;
 }
 
+.subtitle {
+    color: #323232;
+}
+
 h2 {
     font-size: clamp(3.5rem, 4.875vw, 6.25rem);
     font-weight: 500;

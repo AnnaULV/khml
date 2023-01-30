@@ -1,116 +1,166 @@
 @charset "UTF-8";
 
 button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    content: "";
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  content: "";
+  width: 100%;
+  height: 100%;
 }
 
 .button {
-    display: inline-flex;
-    position: relative;
-    align-items: center;
-    cursor: pointer;
-    height: 5rem;
-    min-width: 5rem;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  height: 5rem;
+  min-width: 5rem;
+  border: 0;
+  border-radius: .5rem;
+  margin: 0;
+  padding: 0;
 }
 
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button,
-    header > .center > div > .button.transparent.text {
-        padding: 0;
-    }
+/* тип кнопки — начало */
 
-.button.border {
-    border: 0;
-}
-
-.button.transparent {
-   background-color: rgba(255, 255, 255, 0); 
-}
-
-.button.red {
-    background-color: #BA0C2F;
-}
-
-header > .center > div:last-child > div > .button.red {
-   padding: 2.5rem 4.5rem;
-    border-radius: .5rem;
-}
-
-header > .center > div:last-child > div > .button.red:hover {
-    background-color: #323232;
-}
-
-header > .center > div:last-child > div > .button.red.text:hover > span {
-    color: #FFF;
+.button.text > span:first-child + span {
+  font-family: "content", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .button.icon > span:first-child {
-    width: 100%;
-    height: inherit;
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    transition: opacity .25s ease-in-out;
-    min-width: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
 
-header:not(.scroll) > .center > div > .button.icon > span:first-child,
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon > span:first-child {
-    background-image: url(../img/phone-forwarded.svg);
+.button.icon:not(.text) > span:first-child + span,
+.button.text:not(.icon) > span:first-child {
+  display: none;
 }
 
-header.scroll > .center > div > .button.icon > span:first-child, 
-header.opened:not(.scroll) > .center > div > .button.icon > span:first-child {
-    background-image: url(../img/phone-black.svg);
+/* тип кнопки — конец */
+
+/* ————————————————————————————————————————————————————————————————————————————————————————————————— */
+
+/* цвет кнопки — начало */
+
+.button.transparent {
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.button.text > span:last-child {
-    font-family: "content", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
+.button.transparent.text > span:first-child + span {
+  color: #323232;
+}
+
+.button.transparent.text:hover > span:first-child + span {
+  text-decoration: underline;
+}
+
+.button.red {
+  background-color: #BA0C2F;
+}
+
+.button.red:hover {
+  background-color: #323232;
+}
+
+.button.red.text > span:first-child + span {
+  color: #FFF;
+}
+
+/* цвет кнопки — конец */
+
+/* ————————————————————————————————————————————————————————————————————————————————————————————————— */
+
+/* внешние отступы — начало */
+
+.button.icon:not(.text) > span:first-child,
+.button.text:not(.icon) > span + span {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.button.icon.text > span:first-child {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.button.icon.text > span:first-child + span {
+  margin-right: 3rem;
+}
+
+/* внешние отступы — конец */
+
+/* ————————————————————————————————————————————————————————————————————————————————————————————————— */
+
+
+header:not(.scroll) > .center > div > .button.icon.text > span:first-child,
+body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child {
+  background-image: url(../img/phone-forwarded.svg);
+}
+
+header.scroll.opened > .center > div > .button.icon.text > span:first-child,
+header.scroll:not(.opened) > .center > div > .button.icon.text > span:first-child,
+header.opened:not(.scroll) > .center > div > .button.icon.text > span:first-child {
+  background-image: url(../img/phone-black.svg);
+}
+
+@media (min-width : 1201px) {
+  body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child + span {
     color: #FFF;
-    white-space: nowrap;
-}
-
-header > .center > div > .button.transparent.text > span:last-child  {
-    color: #323232;
-}
-
-header > .center > div > .button.text:hover > span:last-child,
-.button.text:hover > span:last-child {
-    color: #BA0C2F;
-    transition: color .25s linear;
-}
-
-body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.text > span:last-child,
-header > .center > div > .button.text > span:last-child {
-    margin-left: 1rem;
+    margin-right: 0;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .button.text.transparent > span:last-child {
-        display: none;
-    }
+  body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child + span {
+    display: none;
+  }
+
+  body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-      .button.text.transparent > span:last-child {
-        display: none;
-    }
+  header > .center > div > .button.icon.text > span:first-child {
+    margin-right: 3rem;
+  }
+
+  body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  body > .wrapper > .workspace > article > .main > div:first-child > .center > div > div > .button.icon.text > span:first-child + span,
+  header > .center > div > .button.icon.text > span:first-child + span {
+    display: none;
+  }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .button.text.transparent > span:last-child {
-        display: none;
-    }
+  header:not(.scroll):not(.opened) > .center > div > .button.icon.text > span:first-child + span {
+    color: #FFF;
+  }
+
+  header.opened > .center > div > .button.icon.text > span:first-child + span {
+    color: #323232;
+  }
 }
 
 @media (max-width : 480px) {
-    .button.text.transparent > span:last-child {
-        display: none;
-    }
+  header > .center > div > .button.icon.text > span:first-child {
+    margin-left: 1rem;
+  }
+
+  header > .center > div > .button.icon.text > span:first-child + span {
+    display: none;
+  }
 }

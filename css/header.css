@@ -1,284 +1,303 @@
 @charset "UTF-8";
 
 header {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    z-index: 10;
+  position: fixed;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  transition: top .25s linear;
 }
 
-header:not(.scroll) {
-    background-color: rgba(255, 255, 255, 0);
+header:not(.scroll):not(.opened) {
+  background: rgba(255, 255, 255, 0);
+}
+
+header.scroll,
+header.opened:not(.scroll) {
+  background: rgba(255, 255, 255, 1);
 }
 
 header.scroll {
-    top: 0;
-    transition: top .25s linear;
+  box-shadow: 0 0 1rem rgba(29, 29, 29, .1);
 }
 
 header > .center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header > .center > .logo {
-    width: clamp(22rem, 23.5vw, 25rem);
-    height: 5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0% 50%;
+  width: clamp(22rem, 23.5vw, 25rem);
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 50%;
 }
 
 header.scroll > .center > .logo,
 header.opened:not(.scroll) > .center > .logo {
-    background-image: url(../img/logo_mini_black.svg);
+  background-image: url(../img/logo_mini_black.svg);
 }
 
 header:not(.scroll) > .center > .logo {
-    background-image: url(../img/logo_mini_white.svg);
+  background-image: url(../img/logo_mini_white.svg);
 }
 
 header > .center > .logo + div {
-    display: flex;
-    height: 10rem;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header > .center > .logo + div > a {
-    text-decoration: none;
-    white-space: nowrap;
-    margin-right: 3rem;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 3rem;
 }
 
 header > .center > .logo + div > a > span {
-    color: #323232;
-    transition: color .25s linear;
-    cursor: pointer;
-    font-size: 3.25rem;
-    font-weight: 500;
+  color: #323232;
+  transition: color .25s linear;
+  cursor: pointer;
+  font-size: 3.25rem;
+  font-weight: 500;
 }
 
 header > .center > .logo + div > a > span:hover {
-    color: #BA0C2F;
-}
-
-header.scroll,
-header.opened {
-    background-color: #FFF;
+  color: #BA0C2F;
 }
 
 header.opened > .center > div:last-child {
-    width: 100%;
-    margin-top: 0;
+  width: 100%;
+  margin-top: 0;
 }
 
 header.opened > .center > div:last-child > ul {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 2.5rem 0;
-    list-style: none;
-    position: relative;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 2.5rem 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
 }
 
 header:not(.opened) > .center > div:last-child {
-    display: none;
+  display: none;
 }
 
 header.opened > .center > div:last-child::after {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    background-color: #F0F0F0;
-    height: 1px;
-    top: 0;
-    left: calc((100% - 100vw)/2);
+  position: absolute;
+  content: "";
+  width: 100vw;
+  background-color: #F0F0F0;
+  height: 1px;
+  top: 0;
+  left: calc((100% - 100vw)/2);
 }
 
 header > .center > div:last-child > ul > li > span {
-    color: #323232;
-    transition: color .25s linear;
-    cursor: pointer;
-    white-space: nowrap;
+  color: #323232;
+  transition: color .25s linear;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 header > .center > div:last-child > ul > li > span:hover {
-    color: #BA0C2F;
+  color: #BA0C2F;
 }
 
 @media (min-width : 1441px) {
-    header:not(.scroll) {
-        top: -10rem;
-    }
+  header.scroll.up {
+    top: 0;
+  }
 
-    header.opened > .center > div:last-child {
-        position: relative;
-        margin-top: 0;
-    }
+  header.scroll:not(.up),
+  header:not(.scroll) {
+    top: -10rem;
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 0 3rem;
-    }
+  header.opened > .center > div:last-child {
+    position: relative;
+    margin-top: 0;
+  }
 
-    header > .center > .logo + div > a {
-        margin-right: 3rem;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 0 3rem;
+  }
 
-    header.opened > .center > div:last-child > div {
-        display: none;
-    }
+  header > .center > .logo + div > a {
+    margin-right: 1rem;
+  }
+
+  header.opened > .center > div:last-child > div {
+    display: none;
+  }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    header:not(.scroll) {
-        top: -10rem;
-    }
+  header.scroll.up {
+    top: 0;
+  }
 
-    header.opened > .center > div:last-child {
-        position: relative;
-        margin-top: 0;
-    }
+  header.scroll:not(.up),
+  header:not(.scroll) {
+    top: -10rem;
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 0 3rem;
-    }
+  header.opened > .center > div:last-child {
+    position: relative;
+    margin-top: 0;
+  }
 
-    header > .center > .logo + div > a {
-        margin-right: 3rem;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 0 3rem;
+  }
 
-    header.opened > .center > div:last-child > div {
-        display: none;
-    }
+  header > .center > .logo + div > a {
+    margin-right: 1rem;
+  }
+
+  header.opened > .center > div:last-child > div {
+    display: none;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    header:not(.scroll) {
-        top: -10rem;
-    }
+  header.scroll.up {
+    top: 0;
+  }
 
-    header.opened > .center > div:last-child {
-        position: relative;
-        margin-top: 0;
-    }
+  header.scroll:not(.up),
+  header:not(.scroll) {
+    top: -10rem;
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 0 3rem;
-    }
+  header.opened > .center > div:last-child {
+    position: relative;
+    margin-top: 0;
+  }
 
-    header > .center > .logo + div > a {
-        margin-right: 1rem;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 0 3rem;
+  }
 
-    header.opened > .center > div:last-child > div {
-        display: none;
-    }
+  header > .center > .logo + div > a {
+    margin-right: 1rem;
+  }
+
+  header.opened > .center > div:last-child > div {
+    display: none;
+  }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
+  header.scroll.up {
+    top: 0;
+  }
 
-    header:not(.scroll) {
-        top: -10rem;
-    }
+  header.scroll:not(.up),
+  header:not(.scroll) {
+    top: -10rem;
+  }
 
-    header.opened > .center > div:last-child {
-        position: relative;
-        margin-top: 0;
-    }
+  header.opened > .center > div:last-child {
+    position: relative;
+    margin-top: 0;
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 0 3rem;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 0 3rem;
+  }
 
-    header > .center > .logo + div > a {
-        margin-right: 1rem;
-    }
+  header > .center > .logo + div > a {
+    margin-right: 1rem;
+  }
 
-    header.opened > .center > div:last-child > div {
-        display: none;
-    }
+  header.opened > .center > div:last-child > div {
+    display: none;
+  }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    header:not(.scroll) {
-        top: 0rem;
-    }
-    
-    header.opened > .center > div:last-child {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #FFF;
-        margin-top: 10rem;
-        padding-bottom: 3rem;
-    }
+  header {
+    top: 0;
+  }
 
-    header > .center > div:last-child > div {
-        margin-left: 8.5rem
-    }
+  header.opened > .center > div:last-child {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    margin-top: 10rem;
+    padding-bottom: 3rem;
+  }
 
-    header.opened > .center > div:last-child > ul {
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 8.5rem
-    }
+  header > .center > div:last-child > div {
+    margin-left: 8.5rem
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 2.5rem 0;
-        width: 100%;
-    }
+  header.opened > .center > div:last-child > ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 8.5rem
+  }
 
-    header > .center > .logo + div > a {
-        display: none;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+  }
+
+  header > .center > .logo + div > a {
+    display: none;
+  }
 }
 
 @media (max-width : 480px) {
-    header:not(.scroll) {
-        top: 0rem;
-    }
-    
-    header.opened > .center > div:last-child {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #FFF;
-        margin-top: 10rem;
-        padding-bottom: 3rem;
-    }
+  header {
+    top: 0;
+  }
 
-    header > .center > div:last-child > div {
-        margin-left: 8.5rem
-    }
+  header.opened > .center > div:last-child {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    margin-top: 10rem;
+    padding-bottom: 3rem;
+  }
 
-    header.opened > .center > div:last-child > ul {
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 8.5rem
-    }
+  header > .center > div:last-child > div {
+    margin-left: 8.5rem
+  }
 
-    header > .center > div:last-child > ul > li {
-        margin: 0 0 2.5rem 0;
-        width: 100%;
-    }
+  header.opened > .center > div:last-child > ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 8.5rem
+  }
 
-    header > .center > .logo + div > a {
-        display: none;
-    }
+  header > .center > div:last-child > ul > li {
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+  }
+
+  header > .center > .logo + div > a {
+    display: none;
+  }
 }

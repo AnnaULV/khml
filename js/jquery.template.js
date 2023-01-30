@@ -16,6 +16,37 @@ function loadCSS(source, type) {
   return false;
 }
 
+/* функция — положение scroll блока с контентом */
+function isWorkspaceScroll() {
+  "use strict";
+  if ($(".wrapper > .workspace > header").length && $(".wrapper > .workspace > header").hasClass("opened")) {
+    $(".wrapper > .workspace > header").removeClass("opened");
+  }
+  if ($(".wrapper > .workspace").scrollTop() > 0) {
+    if (!$(".wrapper > .workspace > header").hasClass("scroll")) {
+      $(".wrapper > .workspace > header").addClass("scroll");
+    }
+    if ($(".wrapper > .workspace").scrollTop() > $(".main").outerHeight()) {
+      if (!$(".wrapper > .workspace > header.scroll").hasClass("up")) {
+        $(".wrapper > .workspace > header.scroll").addClass("up");
+      }
+      if ($(".wrapper > .workspace > header.scroll").hasClass("down")) {
+        $(".wrapper > .workspace > header.scroll").removeClass("down");
+      }
+    } else {
+      if ($(".wrapper > .workspace > header.scroll").hasClass("up")) {
+        $(".wrapper > .workspace > header.scroll").removeClass("up");
+      }
+      if (!$("header.scroll").hasClass("down")) {
+        $(".wrapper > .workspace > header.scroll").addClass("down");
+      }
+    }
+  } else {
+    $(".wrapper > .workspace > header").removeClass();
+  }
+  return false;
+}
+
 /* функция — вызывается после того, как документ полностью загружен */
 function isReady() {
   /* обрабатывать код в «строгом режиме» */
@@ -31,6 +62,11 @@ function isReady() {
     /* дополнительный CSS-файл успешно загружен (назначение переменной vhCSS значения — TRUE) */
     vhCSS = true;
   }
+  /* ширина шапки равна ширине родительского блока (без внутренних и внешних отступов */
+  $("header").css({
+    "width": $("header").parent("div").width() + "px"
+  });
+  isWorkspaceScroll();
   return false;
 }
 
@@ -44,22 +80,12 @@ $(window).on("load", function () {
   document.body.appendChild(parent);
   let scrollbarWidth = 30 - parent.clientWidth;
   if (scrollbarWidth > 0) {
-    $("header").css({
-      "width": parseInt($(window).innerWidth() - scrollbarWidth) + "px"
-    });
+    /* ... */
   }
   document.body.removeChild(parent);
 
   $(".wrapper > .workspace").scroll(function () {
-    if ($(".wrapper > .workspace").scrollTop() > $(".main").outerHeight()) {
-      if (!$(".wrapper > .workspace > header").hasClass("scroll")) {
-        $(".wrapper > .workspace > header").addClass("scroll");
-      }
-    } else {
-      if ($(".wrapper > .workspace > header").hasClass("scroll")) {
-        $(".wrapper > .workspace > header").removeClass("scroll");
-      }
-    }
+    isWorkspaceScroll();
   });
 
   $(document).on("touchend mouseup", ".square", function (e) {
