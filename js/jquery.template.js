@@ -62,10 +62,12 @@ function isReady() {
     /* дополнительный CSS-файл успешно загружен (назначение переменной vhCSS значения — TRUE) */
     vhCSS = true;
   }
-  /* ширина шапки равна ширине родительского блока (без внутренних и внешних отступов */
+
+  /* ширина шапки равна ширине блока с контентом */
   $("header").css({
-    "width": $("header").parent("div").width() + "px"
+    "width": $("header").next("article").outerWidth() + "px"
   });
+
   isWorkspaceScroll();
   return false;
 }
