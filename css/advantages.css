@@ -1,88 +1,53 @@
 @charset "UTF-8";
 
 .advantages {
-    background-color: #BA0C2F;
+  background-color: #BA0C2F;
+  color: #FFF;
 }
 
 .advantages > div > ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    position: relative;
-    left: -1rem;
-    width: calc(100% + 2rem);
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  position: relative;
+  left: -1rem;
+  width: calc(100% + 2rem);
 }
 
 .advantages > div > ul > li {
-    display: flex;
-    width: calc(33.3333% - 2rem);
-    padding-top: clamp(4rem, 5vw, 6rem);
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    min-width: 32rem;
-    flex-grow: 1;
+  display: flex;
+  width: calc(33.3333% - 2rem);
+  padding-bottom: clamp(4rem, 5vw, 6rem);
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  min-width: 32rem;
+  flex-grow: 1;
 }
 
 .advantages > div > ul > li > span:first-child {
-    content: "";
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: clamp(10rem, 11.25vw, 12.5rem);
-    height: clamp(10rem, 11.25vw, 12.5rem);
-    margin-right: 2rem;
-    display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(10rem, 11.25vw, 12.5rem);
+  height: clamp(10rem, 11.25vw, 12.5rem);
+  margin-right: 2rem;
+  display: block;
 }
 
 .advantages > div > ul > li > span:last-child {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 14.5rem);
-    line-height: 1.3;
-    padding-top: 1rem;
-    min-width: 22rem;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 14.5rem);
+  line-height: 1.3;
+  padding-top: 1rem;
+  min-width: 22rem;
+  flex-grow: 1;
 }
 
 .advantages > div > ul > li > span:last-child > span:first-child {
-    font-weight: 700;
-}
-
-@media (min-width : 1441px) {
-    .advantages > div > ul {
-        padding-top: clamp(0rem, 4.125vw, 4.125rem);
-    }
-}
-
-@media (min-width : 1201px) and (max-width : 1440px) {
-    .advantages > div > ul {
-        padding-top: clamp(0rem, 4.125vw, 4.125rem);
-    }
-}
-
-@media (min-width : 961px) and (max-width : 1200px) {
-    .advantages > div > ul {
-        padding-top: clamp(0rem, 4.125vw, 4.125rem);
-    }
-}
-
-@media (min-width : 721px) and (max-width : 960px) {
-    .advantages > div > ul {
-        padding-top: 0;
-    }
-}
-
-@media (min-width : 481px) and (max-width : 720px) {
-    .advantages > div > ul {
-        padding-top: 0;
-    }
-}
-
-@media (max-width : 480px) {
-    .advantages > div > ul {
-        padding-top: 0;
-    }
+  font-weight: 700;
 }

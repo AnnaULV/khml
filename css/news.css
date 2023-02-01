@@ -8,6 +8,99 @@ article > .image {
     padding-top: min(calc(100%/3*2), 44rem);
 }
 
+.news {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new {
+    width: 33.3333%;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1), 0 .5rem 3rem rgba(0, 0, 0, .05);
+    border-radius: .75rem;
+    margin: 1.5rem;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.new > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 7rem;
+    color: #171D2B;
+}
+
+.new > a > div:first-child {
+    position: relative;
+    padding-top: calc(100%/3*2);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../img/plug.jpg);
+    overflow: hidden;
+}
+
+.new > a > div:first-child > div {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: transform .25s linear;
+}
+
+.new > a > div:first-child + div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+
+.new > a > div:first-child + div > span {
+    font-size: 1.75rem;
+    color: rgb(162, 165, 170);
+}
+
+.new > a > div:first-child + div > strong {
+    font-size: 3.25rem;
+    margin: 1rem 0 0 0;
+}
+
+.new > a > div:last-child {
+    position: absolute;
+    bottom: -10rem;
+    right: -10rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: #3A86C7;
+}
+
+.new > a > div:last-child > span {
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+}
+
+.new > a > div:last-child > span > span {
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    background-image: url(../img/arrow.svg);
+}
+
 @media (min-width : 1441px) {}
 
 @media (min-width : 1201px) and (max-width : 1440px) {}

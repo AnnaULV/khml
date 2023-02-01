@@ -53,19 +53,21 @@
 .main > div:first-child > .center > div > ul > li {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
   height: 4.5rem;
 }
 
 .main > div:first-child > .center > div > ul > li > span {
   color: #FFF;
-  transition: color .25s linear;
+  /* transition: color .25s linear; */
   cursor: pointer;
   white-space: nowrap;
 }
 
 .main > div:first-child > .center > div > ul > li > span:hover,
 .main > div:first-child > .center > div > div > a > span:hover {
-  color: #BA0C2F;
+  /* color: #BA0C2F; */
+  text-decoration: underline;
 }
 
 .main > div:first-child > .center > div > div > a {

@@ -38,11 +38,11 @@ header > .center > .logo {
 
 header.scroll > .center > .logo,
 header.opened:not(.scroll) > .center > .logo {
-  background-image: url(../img/logo_mini_black.svg);
+  background-image: url(../img/logo_mini_black.svg?30012023);
 }
 
 header:not(.scroll) > .center > .logo {
-  background-image: url(../img/logo_mini_white.svg);
+  background-image: url(../img/logo_mini_white.svg?30012023);
 }
 
 header > .center > .logo + div {
@@ -60,15 +60,15 @@ header > .center > .logo + div > a {
 
 header > .center > .logo + div > a > span {
   color: #323232;
-  transition: color .25s linear;
+  /* transition: color .25s linear; */
   cursor: pointer;
   font-size: 3.25rem;
   font-weight: 500;
 }
 
-header > .center > .logo + div > a > span:hover {
+/* header > .center > .logo + div > a > span:hover {
   color: #BA0C2F;
-}
+} */
 
 header.opened > .center > div:last-child {
   width: 100%;
@@ -101,13 +101,15 @@ header.opened > .center > div:last-child::after {
 
 header > .center > div:last-child > ul > li > span {
   color: #323232;
-  transition: color .25s linear;
+  /* transition: color .25s linear; */
   cursor: pointer;
   white-space: nowrap;
 }
 
+header > .center > .logo + div > a > span:hover,
 header > .center > div:last-child > ul > li > span:hover {
-  color: #BA0C2F;
+  /* color: #BA0C2F; */
+  text-decoration: underline;
 }
 
 @media (min-width : 1441px) {

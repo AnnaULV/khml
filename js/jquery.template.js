@@ -1,21 +1,3 @@
-var vhCSS = false;
-
-/* функция — загрузка дополнительных CSS-файлов в шапку HTML-кода */
-function loadCSS(source, type) {
-  /* обрабатывать код в «строгом режиме» */
-  "use strict";
-  /* получение объекта (элемента) по имени тега (head) — первый найденный [0] */
-  let s = document.getElementsByTagName("head")[0];
-  /* получение элемента (link) */
-  let sc = document.createElement("link");
-  /* назначение атрибутов для созданного элемента (link) */
-  sc.rel = type;
-  sc.href = source;
-  /* разместить созданный элемент (link — [sc]) со всеми назначенными атрибутами в полученном объекте (head — [s]) */
-  s.appendChild(sc);
-  return false;
-}
-
 /* функция — положение scroll блока с контентом */
 function isWorkspaceScroll() {
   "use strict";
@@ -55,13 +37,6 @@ function isReady() {
   let vh = $(window).innerHeight() * 0.01;
   /* устанавливаем свойство для всего документа (html) исходя из расчета реальной высоты */
   document.documentElement.style.setProperty("--vh", `${vh}px`);
-  /* если дополнительный CSS-файл еще не был загружен (переменная vhCSS = FALSE) */
-  if (!vhCSS) {
-    /* загружаем дополнительный CSS-файл */
-    loadCSS("css/vh.css?" + $.now(), "stylesheet");
-    /* дополнительный CSS-файл успешно загружен (назначение переменной vhCSS значения — TRUE) */
-    vhCSS = true;
-  }
 
   /* ширина шапки равна ширине блока с контентом */
   $("header").css({
@@ -72,19 +47,10 @@ function isReady() {
   return false;
 }
 
-/* код внутри запущен когда страница будет полностью загружена, включая все фреймы, объекты и изображения */
-$(window).on("load", function () {
+/* код внутри будет запущен когда страница будет полностью загружена, включая все фреймы, объекты и изображения */
+$(document).ready(function () {
   /* обрабатывать код в «строгом режиме» */
   "use strict";
-
-  let parent = document.createElement("div");
-  parent.setAttribute("style", "width:30px; height:30px; overflow:scroll");
-  document.body.appendChild(parent);
-  let scrollbarWidth = 30 - parent.clientWidth;
-  if (scrollbarWidth > 0) {
-    /* ... */
-  }
-  document.body.removeChild(parent);
 
   $(".wrapper > .workspace").scroll(function () {
     isWorkspaceScroll();
