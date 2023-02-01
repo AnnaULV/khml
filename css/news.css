@@ -12,13 +12,15 @@ article > .image {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% + 4rem);
+    left: -2rem;
 }
 
 .new {
-    width: 33.3333%;
+    width: calc(33.3333% - 4rem);
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1), 0 .5rem 3rem rgba(0, 0, 0, .05);
-    border-radius: .75rem;
-    margin: 1.5rem;
+    border-radius: 1rem;
+    margin: 2rem;
     overflow: hidden;
     background-color: #FFF;
 }
@@ -33,9 +35,13 @@ article > .image {
     color: #171D2B;
 }
 
+.new > a:hover > div:last-child {
+    background-color: #BA0C2F;
+}
+
 .new > a > div:first-child {
     position: relative;
-    padding-top: calc(100%/3*2);
+    padding-top: calc(100%/3*1.8);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -54,23 +60,22 @@ article > .image {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    transform: scale(1);
-    transition: transform .25s linear;
+    
 }
 
 .new > a > div:first-child + div {
     display: flex;
     flex-direction: column;
-    padding: 2rem 3rem;
+    padding: clamp(3rem, 3.5vw, 4rem);
 }
 
 .new > a > div:first-child + div > span {
     font-size: 1.75rem;
-    color: rgb(162, 165, 170);
+    color: #323232;
 }
 
 .new > a > div:first-child + div > strong {
-    font-size: 3.25rem;
+    font-size: clamp(2.75rem, 3vw, 3.25rem);
     margin: 1rem 0 0 0;
 }
 
@@ -81,34 +86,61 @@ article > .image {
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
-    background-color: #3A86C7;
+    background-color: #F0F0F0;
 }
 
 .new > a > div:last-child > span {
+    position: relative;
     display: flex;
-    align-items: center;
     width: 10rem;
     height: 10rem;
-    justify-content: center;
+    transition: color .25s linear;
 }
 
 .new > a > div:last-child > span > span {
-    width: 3rem;
-    height: 3rem;
+    width: 2.25rem;
+    height: 3.75rem;
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: contain;
     background-image: url(../img/arrow.svg);
+    position: absolute;
+    bottom: 2.25rem;
+    right: 2.5rem;
 }
 
-@media (min-width : 1441px) {}
+@media (min-width : 1441px) {
+    .new {
+    width: calc(33.3333% - 4rem);
+}
+}
 
-@media (min-width : 1201px) and (max-width : 1440px) {}
+@media (min-width : 1201px) and (max-width : 1440px) {
+    .new {
+    width: calc(33.3333% - 4rem);
+}
+}
 
-@media (min-width : 961px) and (max-width : 1200px) {}
+@media (min-width : 961px) and (max-width : 1200px) {
+    .new {
+    width: calc(33.3333% - 4rem);
+}
+}
 
-@media (min-width : 721px) and (max-width : 960px) {}
+@media (min-width : 721px) and (max-width : 960px) {
+    .new {
+    width: calc(50% - 4rem);
+}
+}
 
-@media (min-width : 481px) and (max-width : 720px) {}
+@media (min-width : 481px) and (max-width : 720px) {
+    .new {
+    width: calc(50% - 4rem);
+}
+}
 
-@media (max-width : 480px) {}
+@media (max-width : 480px) {
+    .new {
+    width: calc(100% - 4rem);
+}
+}
