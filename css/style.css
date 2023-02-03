@@ -102,6 +102,7 @@ article > .section {
 .pagination {
     display: flex;
     justify-content: center;
+    margin-top: 9rem;
 }
 
 .pagination > .numeration {
