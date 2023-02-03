@@ -62,10 +62,10 @@
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  bottom: clamp(3rem, 5.125vw,7.25rem);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: clamp(3rem, 5.125vw, 7.25rem);
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet {
@@ -93,6 +93,60 @@
 .main > .gallery + div > div:last-child > div > .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .main > .gallery + div > div:last-child > div > .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2rem;
+}
+
+article > .section.news {
+    background-color: #F0F0F0;
+}
+
+article > .section.news > .center > .swiper-container {
+    position: relative;
+    width: calc(100% + 4rem);
+    left: -2rem;
+}
+
+article > .section.news > .center > .swiper-container > .swiper {
+    width: 100%;
+    height: 100%;
+    /* разрешаем видеть всю ширину экрана */
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: opacity;
+}
+
+article > .section.news > .center > .swiper-container > .swiper-pointer-events {
+    touch-action: pan-y;
+}
+
+article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color, darken;
 }
 
 @media (min-width : 1441px) {

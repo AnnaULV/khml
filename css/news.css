@@ -17,7 +17,6 @@ article > .image {
 }
 
 .new {
-    width: calc(33.3333% - 4rem);
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1), 0 .5rem 3rem rgba(0, 0, 0, .05);
     border-radius: 1rem;
     margin: 2rem;
@@ -111,36 +110,36 @@ article > .image {
 
 @media (min-width : 1441px) {
     .new {
-    width: calc(33.3333% - 4rem);
+    width: calc(33.3333% - 4rem) !important;
 }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
     .new {
-    width: calc(33.3333% - 4rem);
+    width: calc(33.3333% - 4rem) !important;
 }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
     .new {
-    width: calc(33.3333% - 4rem);
+    width: calc(33.3333% - 4rem) !important;
 }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
     .new {
-    width: calc(50% - 4rem);
+    width: calc(50% - 4rem) !important;
 }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
     .new {
-    width: calc(50% - 4rem);
+    width: calc(50% - 4rem) !important;
 }
 }
 
 @media (max-width : 480px) {
     .new {
-    width: calc(100% - 4rem);
+    width: calc(100% - 4rem) !important;
 }
 }
