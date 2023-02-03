@@ -99,6 +99,52 @@ article > .section {
 
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > .numeration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+.pagination > a {
+    background-color: #F0F0F0;
+    font-weight: 500;
+}
+
+.pagination > a:hover {
+    background-color: #BA0C2F;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination > a:hover > span {
+    color: #FFF;
+}
+
+.pagination > a > span {
+    color: #323232;
+}
+
+.pagination > span {
+    background-color: #323232;
+}
+
+.pagination > span > span {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
 @media (min-width : 1441px) {}
 
 @media (min-width : 1201px) and (max-width : 1440px) {}
