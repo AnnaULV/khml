@@ -43,6 +43,13 @@ function isReady() {
     "width": $("header").next("article").outerWidth() + "px"
   });
 
+  if ($(".prologue").length) {
+    let prologue = parseInt($(".prologue").prev().height() - $(".prologue").prev().outerHeight());
+    $(".prologue").css({
+      "margin-top": "min(" + parseInt(prologue + $(window).innerWidth() * 0.01 * 5) + "px, " + parseInt(prologue + 24) + "px)"
+    });
+  }
+
   isWorkspaceScroll();
   return false;
 }

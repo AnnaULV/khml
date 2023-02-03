@@ -67,6 +67,10 @@ h2 {
     margin-top: clamp(-1.5rem, -1.5vw, -1.5rem);
 }
 
+.prologue {
+    margin-bottom: clamp(2rem, 3vw,4rem);
+}
+
 .center {
     position: relative;
     margin: 0 auto;
