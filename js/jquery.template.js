@@ -46,7 +46,7 @@ function isReady() {
   if ($(".prologue").length) {
     let prologue = parseInt($(".prologue").prev().height() - $(".prologue").prev().outerHeight());
     $(".prologue").css({
-      "margin-top": "min(" + parseInt(prologue + $(window).innerWidth() * 0.01 * 5) + "px, " + parseInt(prologue + 24) + "px)"
+      "margin-top": "min(" + parseInt(prologue + $(window).innerWidth() * 0.01 * 5 - 16) + "px, " + parseInt(prologue + 8) + "px)"
     });
   }
 
