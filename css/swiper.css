@@ -1,194 +1,197 @@
 @charset "UTF-8";
 
 .main > .gallery {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 /* контейнер */
 .main > .gallery > .swiper-container {
-    /* относительное позиционирование */
-    position: relative;
-    height: 100%;
+  /* относительное позиционирование */
+  position: relative;
+  height: 100%;
 }
 
 
 .main > .gallery > .swiper-container > .swiper {
-    width: 100%;
-    height: 100%;
-    /* разрешаем видеть всю ширину экрана */
-    overflow: visible !important;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* разрешаем видеть всю ширину экрана */
+  overflow: visible !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
-.main > .gallery > .swiper-container > .swiper > .swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  position: relative;
 }
 
 .main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: opacity;
-}
-
-.main > .gallery > .swiper-container > .swiper-pointer-events {
-    touch-action: pan-y;
+  width: 100%;
+  height: 100%;
+  transition-property: opacity;
 }
 
 .main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color, darken;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: color, darken;
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: clamp(3rem, 5.125vw, 7.25rem);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: clamp(3rem, 5.125vw, 7.25rem);
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet {
-    width: 1.5rem;
-    height: 1.5rem;
-    display: inline-block;
-    border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 50%;
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-    cursor: pointer;
-    transition: transform .25s ease-in-out;
-    background-color: #F0F0F0;
+  cursor: pointer;
+  transition: transform .25s ease-in-out;
+  background-color: #F0F0F0;
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination-clickable .swiper-pagination-bullet:hover,
 .main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
-    transform: scale(1.35);
+  transform: scale(1.35);
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination > .swiper-pagination-bullet-active {
-    background-color: #BA0C2F;
+  background-color: #BA0C2F;
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .main > .gallery + div > div:last-child > div > .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 article > .section.news {
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
 }
 
 article > .section.news > .center > .swiper-container {
-    position: relative;
-    width: calc(100% + 4rem);
-    left: -2rem;
+  position: relative;
+  width: calc(100% + 4rem);
+  left: -2rem;
 }
 
 article > .section.news > .center > .swiper-container > .swiper {
-    width: 100%;
-    height: 100%;
-    /* разрешаем видеть всю ширину экрана */
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* разрешаем видеть всю ширину экрана */
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
 article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
 }
 
 article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: opacity;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: opacity;
 }
 
 article > .section.news > .center > .swiper-container > .swiper-pointer-events {
-    touch-action: pan-y;
+  touch-action: pan-y;
 }
 
 article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color, darken;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: color, darken;
 }
 
 @media (min-width : 1441px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: clamp(3rem, 6.5vw, 10rem);
-        margin-left: -2rem;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: clamp(3rem, 6.5vw, 10rem);
+    margin-left: -2rem;
+  }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: clamp(3rem, 6.5vw, 10rem);
-        margin-left: -2rem;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: clamp(3rem, 6.5vw, 10rem);
+    margin-left: -2rem;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: clamp(3rem, 6.5vw, 10rem);
-        margin-left: -2rem;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: clamp(3rem, 6.5vw, 10rem);
+    margin-left: -2rem;
+  }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: clamp(3rem, 6.5vw, 10rem);
-        margin-left: -2rem;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: clamp(3rem, 6.5vw, 10rem);
+    margin-left: -2rem;
+  }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width : 480px) {
-    .main > .gallery + div > div:last-child > div > .swiper-pagination {
-        padding-left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
+  .main > .gallery + div > div:last-child > div > .swiper-pagination {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 }
