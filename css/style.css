@@ -71,6 +71,10 @@ h2 {
   margin-bottom: clamp(2rem, 3vw, 4rem);
 }
 
+article > .section > .center > .content {
+    padding-top: clamp(4rem, 5vw,6rem)
+}
+
 .center {
   position: relative;
   margin: 0 auto;
@@ -129,7 +133,7 @@ article > .section {
 .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 9rem;
+    margin-top: clamp(4rem, 6.5vw,9rem)
 }
 
 .pagination > .numeration {
