@@ -1,9 +1,11 @@
+function isUpDown() {
+  "use strict";
+  return false;
+}
+
 /* функция — положение scroll блока с контентом */
 function isWorkspaceScroll() {
   "use strict";
-  if ($(".wrapper > .workspace > header").length && $(".wrapper > .workspace > header").hasClass("opened")) {
-    $(".wrapper > .workspace > header").removeClass("opened");
-  }
   if ($(".wrapper > .workspace").scrollTop() > 0) {
     if (!$(".wrapper > .workspace > header").hasClass("scroll")) {
       $(".wrapper > .workspace > header").addClass("scroll");
@@ -50,7 +52,10 @@ function isReady() {
     });
   }
 
-  isWorkspaceScroll();
+  if ($(".wrapper > .workspace > article > .main").length) {
+    isWorkspaceScroll();
+  }
+
   return false;
 }
 
@@ -60,7 +65,12 @@ $(document).ready(function () {
   "use strict";
 
   $(".wrapper > .workspace").scroll(function () {
-    isWorkspaceScroll();
+    if ($(".wrapper > .workspace > article > .main").length) {
+      isWorkspaceScroll();
+    }
+    if ($(".wrapper > .workspace > header").length && $(".wrapper > .workspace > header").hasClass("opened")) {
+      $(".wrapper > .workspace > header").removeClass("opened");
+    }
   });
 
   $(document).on("touchend mouseup", ".square", function (e) {

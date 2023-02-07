@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  "use strict";
 
   new Swiper(".main > .gallery > .swiper-container > .swiper", {
     slidesPerView: 1,
@@ -21,15 +22,34 @@ $(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 8,
     breakpoints: {
-      480: {
+      481: {
         slidesPerView: 2,
         spaceBetween: 16
       },
-      960: {
+      961: {
         slidesPerView: 3,
         spaceBetween: 24
       },
-      1200: {
+      1201: {
+        slidesPerView: 3,
+        spaceBetween: 32
+      }
+    }
+  });
+
+  new Swiper(".section.news > .center > .swiper-container > .swiper", {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    breakpoints: {
+      481: {
+        slidesPerView: 2,
+        spaceBetween: 16
+      },
+      961: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      },
+      1201: {
         slidesPerView: 3,
         spaceBetween: 32
       }

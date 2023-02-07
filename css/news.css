@@ -8,19 +8,15 @@ article > .image {
   padding-top: min(calc(100%/3*2), 44rem);
 }
 
-.news {
+.news:not(.section) {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% + 4rem);
-  left: -2rem;
-  margin-bottom: -4rem;
 }
 
 .new {
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1), 0 .5rem 3rem rgba(0, 0, 0, .05);
+  box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .2);
   border-radius: 1rem;
-  margin: 0 2rem 4rem 2rem;
   overflow: hidden;
   background-color: #FFF;
 }
@@ -93,39 +89,80 @@ article > .image {
   background-image: url(../img/arrow.svg);
 }
 
-
 @media (min-width : 1441px) {
-  .new {
-    width: calc(33.3333% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 4rem);
+    left: -2rem;
+    margin-bottom: -4rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(33.3333% - 4rem);
+    margin: 0 2rem 4rem 2rem;
   }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-  .new {
-    width: calc(33.3333% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 4rem);
+    left: -2rem;
+    margin-bottom: -4rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(33.3333% - 4rem);
+    margin: 0 2rem 4rem 2rem;
   }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-  .new {
-    width: calc(33.3333% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 3rem);
+    left: -1.5rem;
+    margin-bottom: -3rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(33.3333% - 3rem);
+    margin: 0 1.5rem 3rem 1.5rem;
   }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-  .new {
-    width: calc(50% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 2rem);
+    left: -1rem;
+    margin-bottom: -2rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 2rem 1rem;
   }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-  .new {
-    width: calc(50% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 2rem);
+    left: -1rem;
+    margin-bottom: -2rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 2rem 1rem;
   }
 }
 
 @media (max-width : 480px) {
-  .new {
-    width: calc(100% - 4rem) !important;
+  .news:not(.section) {
+    width: calc(100% + 1rem);
+    left: -.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .news:not(.section) > .new {
+    width: calc(100% - 1rem);
+    margin: 0 .5rem 1rem .5rem;
   }
 }
