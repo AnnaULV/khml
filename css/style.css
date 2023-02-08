@@ -108,15 +108,6 @@ article > .section {
     position: relative;
 }
 
-article > .section.secondary {
-    padding-top: clamp(5rem, 7.5vw, 13rem);
-    padding-bottom: clamp(4rem, 5.5vw, 7rem);
-}
-
-article > .section.border {
-    padding-top: clamp(4rem, 6vw, 8rem);
-}
-
 article > .section.border::after {
     width: calc(100% - 6rem);
     height: 1px;
