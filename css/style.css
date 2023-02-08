@@ -95,15 +95,6 @@ article > .section > .center > .content {
     max-width: 92rem;
 }
 
-.section.border::after {
-    width: calc(100% - 6rem);
-    height: 1px;
-    position: absolute;
-    top: clamp(-5rem, 7.5vw, -13rem);;
-    content: "";
-    background-color: #F0F0F0;
-}
-
 .space__between {
     display: flex;
     align-items: center;
@@ -119,7 +110,22 @@ article > .section {
 
 article > .section.secondary {
     padding-top: clamp(5rem, 7.5vw, 13rem);
-    padding-bottom: 0;
+    padding-bottom: clamp(4rem, 5.5vw, 7rem);
+}
+
+article > .section.border {
+ padding-top: clamp(4rem, 6vw, 8rem);   
+}
+
+article > .section.border::after {
+    width: calc(100% - 6rem);
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: calc((100%-100vw)-6rem);
+    right: calc((100%-100vw)-6rem);
+    content: "";
+    background-color: #F0F0F0;
 }
 
 
