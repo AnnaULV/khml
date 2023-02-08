@@ -95,7 +95,7 @@ article > .section > .center > .content {
     max-width: 92rem;
 }
 
-.center.border::after {
+.section.border::after {
     width: calc(100% - 6rem);
     height: 1px;
     position: absolute;
@@ -209,13 +209,9 @@ article > .section.secondary {
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-     article > .section.secondary { 
-    padding-bottom: 5rem;
-}
+ 
 }
 
 @media (max-width : 480px) {
-    article > .section.secondary { 
-    padding-bottom: 5rem;
-}
+  
 }
