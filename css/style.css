@@ -114,7 +114,7 @@ article > .section.secondary {
 }
 
 article > .section.border {
- padding-top: clamp(4rem, 6vw, 8rem);   
+    padding-top: clamp(4rem, 6vw, 8rem);
 }
 
 article > .section.border::after {
@@ -122,10 +122,11 @@ article > .section.border::after {
     height: 1px;
     position: absolute;
     top: 0;
-    left: calc((100% - (100vw - 6rem)) / 2);
-    right: calc((100% - (100vw - 6rem)) / 2);
+    left: 50%;
     content: "";
     background-color: #F0F0F0;
+    max-width: 140rem;
+    transform: translate(-50%, 0);
 }
 
 
@@ -210,14 +211,8 @@ article > .section.border::after {
 
 @media (min-width : 961px) and (max-width : 1200px) {}
 
-@media (min-width : 721px) and (max-width : 960px) {
-   
-}
+@media (min-width : 721px) and (max-width : 960px) {}
 
-@media (min-width : 481px) and (max-width : 720px) {
- 
-}
+@media (min-width : 481px) and (max-width : 720px) {}
 
-@media (max-width : 480px) {
-  
-}
+@media (max-width : 480px) {}
