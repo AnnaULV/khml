@@ -99,16 +99,17 @@ header.opened > .center > div:last-child::after {
   left: calc((100% - 100vw)/2);
 }
 
-header > .center > div:last-child > ul > li > span {
+header > .center > div:last-child > ul > li > span,
+header > .center > div:last-child > ul > li > a {
   color: #323232;
-  /* transition: color .25s linear; */
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 header > .center > .logo + div > a > span:hover,
-header > .center > div:last-child > ul > li > span:hover {
-  /* color: #BA0C2F; */
+header > .center > div:last-child > ul > li > span:hover,
+header > .center > div:last-child > ul > li > a:hover {
   text-decoration: underline;
 }
 

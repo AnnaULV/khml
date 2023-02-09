@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-article > .image {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  padding-top: min(calc(100%/3*2), 44rem);
-}
-
 .news:not(.section) {
   position: relative;
   display: flex;

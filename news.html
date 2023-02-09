@@ -2,322 +2,321 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta name="author" content="tarantul web development zone | www.tarantul.zone" / -->
-    <meta name="description" content="Важный META-тег для краткого описания содержимого страницы (документа) и формирования сниппета (~160 символов)">
-    <script>
-        function loadCSS(source, type) {
-            "use strict";
-            let s = document.getElementsByTagName("head")[0];
-            let sc = document.createElement("link");
-            sc.rel = "stylesheet";
-            sc.href = source;
-            s.appendChild(sc);
-            return false;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta name="author" content="tarantul web development zone | www.tarantul.zone" / -->
+  <meta name="description" content="Важный META-тег для краткого описания содержимого страницы (документа) и формирования сниппета (~160 символов)">
+  <script>
+    function loadCSS(source, type) {
+      "use strict";
+      let s = document.getElementsByTagName("head")[0];
+      let sc = document.createElement("link");
+      sc.rel = "stylesheet";
+      sc.href = source;
+      s.appendChild(sc);
+      return false;
+    }
 
-        let jsonCSS = JSON.parse('[{"source":"css/reset.css"},{"source":"css/fonts.css"},{"source":"css/style.css"},{"source":"css/header.css"},{"source":"css/article.css"},{"source":"css/main.css"},{"source":"css/advantages.css"},{"source":"css/burger.css"},{"source":"css/button.css"},{"source":"css/news.css"},{"source":"css/swiper.css"},{"source":"css/footer.css"},{"source":"css/vh.css"},{"source":"css/form.css"}]');
-        jsonCSS.forEach(function(e, i) {
-            setTimeout(function() {
-                loadCSS(jsonCSS[i].source + "?" + $.now());
-            }, 250);
-        });
+    let jsonCSS = JSON.parse('[{"source":"css/reset.css"},{"source":"css/fonts.css"},{"source":"css/style.css"},{"source":"css/header.css"},{"source":"css/article.css"},{"source":"css/burger.css"},{"source":"css/button.css"},{"source":"css/news.css"},{"source":"css/footer.css"},{"source":"css/vh.css"},{"source":"css/form.css"}]');
+    jsonCSS.forEach(function(e, i) {
+      setTimeout(function() {
+        loadCSS(jsonCSS[i].source + "?" + $.now());
+      }, 250);
+    });
 
-    </script>
-    <title>«Химки-Молжаниново» — территория для развития бизнеса</title>
+  </script>
+  <title>«Химки-Молжаниново» — территория для развития бизнеса</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="workspace">
-            <header class="scroll up">
-                <div class="center">
-                    <a class="logo" href="MAIN.html" title="«Химки-Молжаниново» — территория для развития бизнеса"></a>
-                    <div>
-                        <a href="tel:+74993747605" title="+7 (499) 374-76-05">
-                            <span>+7 (499) 374-76-05</span>
-                        </a>
-                        <button class="button border transparent icon text">
-                            <span></span>
-                            <span>Позвоните мне</span>
-                        </button>
-                        <div class="square burger">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <span>О компании</span>
-                            </li>
-                            <li>
-                                <span>Технологии</span>
-                            </li>
-                            <li>
-                                <span>Каталог объектов</span>
-                            </li>
-                            <li>
-                                <span>Новости и события</span>
-                            </li>
-                            <li>
-                                <span>Контакты</span>
-                            </li>
-                        </ul>
-                        <div>
-                            <a class="button red text" href="tel:+74993747605" title="+7 (499) 374-76-05">
-                                <span>+7 (499) 374-76-05</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <article>
-                <div class="image" style="background-image: url(img/news1.jpg)"></div>
-                <div class="section secondary">
-                    <div class="center">
-                        <h1>Новости и события</h1>
-                        <div class="prologue">
-                            <p>
-                                Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="news">
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то очень интересной новости</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то очень интересной новости</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то очень интересной новости</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то очень интересной новости</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new">
-                                <a href="#">
-                                    <div>
-                                        <div style="background-image: url(img/new1.jpg)">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span>31.08.2022</span>
-                                        <strong>Заголовок какой-то очень интересной новости</strong>
-                                    </div>
-                                    <div class="more">
-                                        <span>
-                                            <span></span>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pagination">
-                            <span class="numeration">
-                                <span>1</span>
-                            </span>
-                            <a class="numeration">
-                                <span>2</span>
-                            </a>
-                            <a class="numeration">
-                                <span>3</span>
-                            </a>
-                            <a class="numeration">
-                                <span>4</span>
-                            </a>
-                            <a class="numeration">
-                                <span>5</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="content">
-                            <p>
-                                Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="section border">
-                    <div class="center">
-                        <div class="form feedback">
-                            <h2>Запрос</h2>
-                        </div>
-                    </div>
-                    <div class="center content">
-                        <div class="form feedback">
-                            <div>
-                                <p></p>
-                                <p>
-                                    <span>Ваша заявка успешно отправлена.</span>
-                                    <span>В ближайшее время с Вами свяжется наш специалист и ответит на все интересующие Вас вопросы.</span>
-                                </p>
-                                <form name="feedback" method="post" action="#" autocomplete="off">
-                                    <input type="hidden" name="QUEST[FORM]" value="Отправить заявку" data-form="feedback">
-                                    <ul>
-                                        <li>
-                                            <div class="required name">
-                                                <label class="required">
-                                                    <input class="field" type="text" name="QUEST[NAME]" value="" data-check="name" data-form="feedback" autocomplete="off">
-                                                    <span>
-                                                        <span>Имя</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="required phone">
-                                                <label class="required">
-                                                    <input class="field" type="tel" name="QUEST[PHONE]" value="" data-check="phone" data-form="feedback" autocomplete="off">
-                                                    <span>
-                                                        <span>Телефон</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="email">
-                                                <label>
-                                                    <input class="field" type="text" name="QUEST[EMAIL]" value="" data-check="email" data-form="feedback" autocomplete="off">
-                                                    <span>
-                                                        <span>E-mail</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="message">
-                                                <label>
-                                                    <textarea class="field" name="QUEST[MESSAGE]" data-form="feedback" autocomplete="off"></textarea>
-                                                    <span>
-                                                        <span>Текст сообщения</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <ol>
-                                                <li>
-                                                    <div>
-                                                        <button type="button" aria-label="Отправить" class="button red text feedback">
-                                                            <span></span>
-                                                            <span>Отправить</span>
-                                                        </button>
-                                                    </div>
-                                                    <p>Нажимая кнопку <strong>Отправить</strong>, вы даете <a href="#" title="согласие на обработку персональных данных">согласие на обработку персональных данных</a></p>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                    </ul>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <footer>
-                <div class="center space__between">
-                    <span>2023 © Производственно-складской комплекс «Химки-Молжаниново»</span>
-                    <a class="developer" href="tarantul.zone" title="разработка сайтов"></a>
-                </div>
-            </footer>
+  <div class="wrapper">
+    <div class="workspace">
+      <header class="scroll up">
+        <div class="center">
+          <a class="logo" href="MAIN.html" title="«Химки-Молжаниново» — территория для развития бизнеса"></a>
+          <div>
+            <a href="tel:+74993747605" title="+7 (499) 374-76-05">
+              <span>+7 (499) 374-76-05</span>
+            </a>
+            <button class="button border transparent icon text">
+              <span></span>
+              <span>Позвоните мне</span>
+            </button>
+            <div class="square burger">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <span>О компании</span>
+              </li>
+              <li>
+                <span>Технологии</span>
+              </li>
+              <li>
+                <span>Каталог объектов</span>
+              </li>
+              <li>
+                <span>Новости и события</span>
+              </li>
+              <li>
+                <span>Контакты</span>
+              </li>
+            </ul>
+            <div>
+              <a class="button red text" href="tel:+74993747605" title="+7 (499) 374-76-05">
+                <span>+7 (499) 374-76-05</span>
+              </a>
+            </div>
+          </div>
         </div>
+      </header>
+      <article>
+        <div class="image" style="background-image: url(img/news1.jpg)"></div>
+        <div class="section secondary">
+          <div class="center">
+            <h1>Новости и события</h1>
+            <div class="prologue">
+              <p>
+                Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров.
+              </p>
+            </div>
+          </div>
+          <div class="center">
+            <div class="news">
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то очень интересной новости</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то очень интересной новости</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то очень интересной новости</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то очень интересной новости</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="new">
+                <a href="#">
+                  <div>
+                    <div style="background-image: url(img/new1.jpg)">
+                    </div>
+                  </div>
+                  <div>
+                    <span>31.08.2022</span>
+                    <strong>Заголовок какой-то очень интересной новости</strong>
+                  </div>
+                  <div class="more">
+                    <span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="pagination">
+              <span class="numeration">
+                <span>1</span>
+              </span>
+              <a class="numeration">
+                <span>2</span>
+              </a>
+              <a class="numeration">
+                <span>3</span>
+              </a>
+              <a class="numeration">
+                <span>4</span>
+              </a>
+              <a class="numeration">
+                <span>5</span>
+              </a>
+            </div>
+          </div>
+          <div class="center">
+            <div class="content">
+              <p>
+                Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section border">
+          <div class="center">
+            <div class="form feedback">
+              <h3></h3>
+            </div>
+          </div>
+          <div class="center content">
+            <div class="form feedback">
+              <div>
+                <p></p>
+                <p>
+                  <span>Ваша заявка успешно отправлена.</span>
+                  <span>В ближайшее время с Вами свяжется наш специалист и ответит на все интересующие Вас вопросы.</span>
+                </p>
+                <form name="feedback" method="post" action="#" autocomplete="off">
+                  <input type="hidden" name="QUEST[FORM]" value="Отправить заявку" data-form="feedback">
+                  <ul>
+                    <li>
+                      <div class="required name">
+                        <label class="required">
+                          <input class="field" type="text" name="QUEST[NAME]" value="" data-check="name" data-form="feedback" autocomplete="off">
+                          <span>
+                            <span>Имя</span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="required phone">
+                        <label class="required">
+                          <input class="field" type="tel" name="QUEST[PHONE]" value="" data-check="phone" data-form="feedback" autocomplete="off">
+                          <span>
+                            <span>Телефон</span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="email">
+                        <label>
+                          <input class="field" type="text" name="QUEST[EMAIL]" value="" data-check="email" data-form="feedback" autocomplete="off">
+                          <span>
+                            <span>E-mail</span>
+                          </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="message">
+                        <label>
+                          <textarea class="field" name="QUEST[MESSAGE]" data-form="feedback" autocomplete="off"></textarea>
+                          <span>
+                            <span>Текст сообщения</span>
+                          </span>
+                        </label>
+                      </div>
+                      <ol>
+                        <li>
+                          <div>
+                            <button type="button" aria-label="Отправить" class="button red text feedback">
+                              <span></span>
+                              <span>Отправить</span>
+                            </button>
+                          </div>
+                          <p>Нажимая кнопку <strong>Отправить</strong>, вы даете <a href="#" title="согласие на обработку персональных данных">согласие на обработку персональных данных</a></p>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div class="center space__between">
+          <span>2023 © Производственно-складской комплекс «Химки-Молжаниново»</span>
+          <a class="developer" href="tarantul.zone" title="разработка сайтов"></a>
+        </div>
+      </footer>
     </div>
-    <script defer src="js/jquery.min.js?30012023"></script>
-    <script defer src="js/swiper.min.js?30012023"></script>
-    <script>
-        function loadJS(source) {
-            "use strict";
-            var s = document.getElementsByTagName("body")[0],
-                sc = document.createElement("script");
-            sc.defer = true;
-            sc.src = source;
-            s.appendChild(sc);
-            return false;
-        }
+  </div>
+  <script defer src="js/jquery.min.js?30012023"></script>
+  <script>
+    function loadJS(source) {
+      "use strict";
+      var s = document.getElementsByTagName("body")[0],
+        sc = document.createElement("script");
+      sc.defer = true;
+      sc.src = source;
+      s.appendChild(sc);
+      return false;
+    }
 
-        let jsonJS = JSON.parse('[{"source":"js/jquery.template.js"},{"source":"js/main.js"},{"source":"js/jquery.inputmask.js"},{"source":"js/jquery.form.js"}]');
-        jsonJS.forEach(function(e, i) {
-            setTimeout(function() {
-                loadJS(jsonJS[i].source + "?" + $.now());
-            }, 250);
-        });
+    let jsonJS = JSON.parse('[{"source":"js/jquery.inputmask.js"},{"source":"js/jquery.template.js"},{"source":"js/jquery.form.js"}]');
+    jsonJS.forEach(function(e, i) {
+      setTimeout(function() {
+        loadJS(jsonJS[i].source + "?" + $.now());
+      }, 250);
+    });
 
-    </script>
+  </script>
 </body>
 
 </html>

@@ -41,19 +41,27 @@ function isReady() {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 
   /* ширина шапки равна ширине блока с контентом */
-  $("header").css({
-    "width": $("header").next("article").outerWidth() + "px"
-  });
+  if ($(".wrapper > .workspace > header").length) {
+    $("header").css({
+      "width": $("header").next("article").outerWidth() + "px"
+    });
+  }
 
   if ($(".prologue").length) {
     let prologue = parseInt($(".prologue").prev().height() - $(".prologue").prev().outerHeight());
     $(".prologue").css({
-      "margin-top": "min(" + parseInt(prologue + $(window).innerWidth() * 0.01 * 5 - 16) + "px, " + parseInt(prologue + 8) + "px)"
+      "margin-top": "min(" + parseInt(prologue + $(window).innerWidth() * 0.01 * 5 - 8) + "px, " + parseInt(prologue + 24) + "px)"
     });
   }
 
   if ($(".wrapper > .workspace > article > .main").length) {
     isWorkspaceScroll();
+  } else {
+    if ($(".wrapper > .workspace > header").length) {
+      $(".wrapper > .workspace > article").css({
+        "margin-top": 80 + "px"
+      });
+    }
   }
 
   return false;

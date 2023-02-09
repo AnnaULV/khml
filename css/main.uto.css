@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.section.uto > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > p {
+  margin-top: 2rem;
+}
+
 .section.uto > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > span:first-child {
   height: clamp(15rem, 16.5vw, 18rem);
   background-repeat: no-repeat;
