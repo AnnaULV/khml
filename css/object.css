@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+table,
+table > thead,
+table > tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+table > thead > tr {
+  align-items: center;
+  margin-top: clamp(4rem, 6vw, 8rem);
+  margin-bottom: clamp(1rem, 1.5vw, 2rem);
+}
+
+article > .section > .center > .prologue > div,
+table > thead > tr > th {
+  font-weight: 700;
+}
+
+table > thead > tr,
+table > tbody > tr {
+  display: flex;
+}
+
+table > thead > tr,
+table > tbody > tr {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 5rem;
+}
+
+table > tbody > tr > td + td {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+article > .section > .center > .prologue,
+table > tbody > tr {
+  border-bottom: solid 1px rgba(180, 180, 180, 1);
+}
+
+article > .section.border {
+  padding-top: 0 !important;
+}
+
+article > .section.border::after {
+  display: none !important;
+}
+
+article > .section > .center > .prologue {
+  padding-bottom: clamp(1rem, 1.5vw, 2rem);
+  margin-bottom: clamp(2.5rem, 3.75vw, 5rem) !important;
+}
+
+article > .section > .center > .prologue > div > .button {
+  margin-top: clamp(1rem, 1.5vw, 2rem) !important;
+  margin-bottom: clamp(1rem, 1.5vw, 2rem) !important;
+}
+
+article > .section > .center > .prologue > div {
+  display: flex;
+}
+
+article > .section > .center > .prologue > div {
+  font-size: clamp(3rem, 3.75vw, 4.5rem);
+}
+
+ul.icons {
+  flex-wrap: wrap;
+}
+
+.gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
+  width: 100%;
+  padding-top: min(calc(100%/3*2), 80rem);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width : 1201px) {
+  ul.icons {
+    width: 75%;
+  }
+
+  ul.icons > li {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  ul.icons > li {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 960px) {
+  ul.icons > li {
+    width: 50%;
+  }
+}
+
+@media (max-width : 480px) {
+
+  table > tbody > tr,
+  ul.icons,
+  article > .section > .center > .prologue > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  article > .section > .center > .prologue > div {
+    padding-top: clamp(2rem, 3vw, 4rem);
+  }
+}
+
+@media (min-width : 481px) and (max-width : 1200px) {
+  ul.icons {
+    width: 100%;
+  }
+}
+
+@media (min-width : 481px) {
+
+  table > tbody > tr,
+  article > .section > .center > .prologue > div {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  article > .section > .center > .prologue > div {
+    padding-top: clamp(1rem, 1.5vw, 2rem);
+  }
+}
