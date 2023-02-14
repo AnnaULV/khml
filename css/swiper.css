@@ -120,10 +120,6 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
   margin-bottom: 4rem;
 }
 
-.gallery.newspage > .swiper-container > .swiper {
-    overflow: hidden;
-}
-
 .gallery.newspage > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
   width: 100%;
   padding-top: min(calc(100%/3*2), 60rem);
@@ -141,6 +137,10 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
   article > .section.news > .center > .swiper-container > .swiper {
     overflow: hidden;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: hidden;
+}
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
@@ -152,6 +152,10 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
   article > .section.news > .center > .swiper-container > .swiper {
     overflow: hidden;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: hidden;
+}
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
@@ -159,6 +163,10 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
     padding-left: clamp(3rem, 6.5vw, 10rem);
     margin-left: -2rem;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: visible;
+}
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
@@ -166,6 +174,10 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
     padding-left: clamp(3rem, 6.5vw, 10rem);
     margin-left: -2rem;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: visible;
+}
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
@@ -174,6 +186,10 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
     margin-left: 0;
     justify-content: center;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: visible;
+}
 }
 
 @media (max-width : 480px) {
@@ -182,4 +198,8 @@ article > .section.news > .center > .swiper-container > .swiper > .swiper-wrappe
     margin-left: 0;
     justify-content: center;
   }
+    
+    .gallery > .swiper-container > .swiper {
+    overflow: visible;
+}
 }
