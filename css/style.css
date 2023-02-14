@@ -131,6 +131,14 @@ article > .section.border::after {
   transform: translate(-50%, 0);
 }
 
+article > .section > .center > .alias {
+    padding-bottom: clamp(2.5rem, 3vw, 3.5rem);
+}
+
+article > .section > .center > .alias > span {
+    font-size: 1.75rem;
+}
+
 .more {
   position: absolute;
   bottom: -10rem;
