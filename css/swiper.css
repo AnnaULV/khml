@@ -1,205 +1,214 @@
 @charset "UTF-8";
 
 .swiper-container > .swiper {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  list-style: none;
-  z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    z-index: 1;
 }
 
 .swiper-container > .swiper > .swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
 }
 
 .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
-  flex-shrink: 0;
-  position: relative;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .swiper-pointer-events {
-  touch-action: pan-y;
+    touch-action: pan-y;
 }
 
 .main > .gallery {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 /* контейнер */
 .main > .gallery > .swiper-container {
-  height: 100%;
+    height: 100%;
 }
 
 .main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
-  height: 100%;
-  transition-property: opacity;
+    height: 100%;
+    transition-property: opacity;
 }
 
 .main > .gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: color, darken;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color, darken;
 }
 
 .swiper-pagination.swiper-pagination-lock {
-  display: none;
+    display: none;
 }
 
 .swiper-pagination:not(.swiper-pagination-lock) {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  margin: 0 2rem;
-  position: relative;
-  z-index: 10;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .swiper-pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #BA0C2F;
+    background-color: #BA0C2F;
 }
 
 .swiper-pagination > .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-  cursor: pointer;
-  transition: transform .25s ease-in-out;
-  background-color: rgba(240, 240, 240, 1);
+    cursor: pointer;
+    transition: transform .25s ease-in-out;
+    background-color: rgba(240, 240, 240, 1);
 }
 
 .swiper-pagination > .swiper-pagination-bullet:hover,
 .swiper-pagination > .swiper-pagination-bullet-active {
-  transform: scale(1.35);
+    transform: scale(1.35);
 }
 
 .main > .gallery + div > div:last-child > div > .swiper-pagination:not(.swiper-pagination-lock) {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  bottom: clamp(3rem, 5.125vw, 7.25rem);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: clamp(3rem, 5.125vw, 7.25rem);
 }
 
 .gallery + .swiper-pagination:not(.swiper-pagination-lock) {
-  margin-top: 4rem;
-  margin-bottom: clamp(-6rem, -3vw, 0rem);
-  height: 2rem;
-  justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: clamp(-6rem, -3vw, 0rem);
+    height: 2rem;
+    justify-content: center;
 }
 
 article > .section.news {
-  background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 article > .section.news > .center > .swiper-container > .swiper {
-  margin-top: -4rem;
-  margin-bottom: -4rem;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
 }
 
 article > .section.news > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .gallery.newspage > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
-  width: 100%;
-  padding-top: min(calc(100%/3*2), 60rem);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 100%;
+    padding-top: min(calc(100%/3*2), 60rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.gallery.photoline > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
+    width: 100%;
+    padding-top: min(calc(100%/3*2), 30rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 @media (min-width : 1441px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: clamp(3rem, 6.5vw, 10rem);
-    margin-left: -2rem;
-  }
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
 
-  article > .section.news > .center > .swiper-container > .swiper {
-    overflow: hidden;
-  }
-    
+    article > .section.news > .center > .swiper-container > .swiper {
+        overflow: hidden;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: clamp(3rem, 6.5vw, 10rem);
-    margin-left: -2rem;
-  }
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
 
-  article > .section.news > .center > .swiper-container > .swiper {
-    overflow: hidden;
-  }
-    
+    article > .section.news > .center > .swiper-container > .swiper {
+        overflow: hidden;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: clamp(3rem, 6.5vw, 10rem);
-    margin-left: -2rem;
-  }
-    
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: visible;
-}
+        overflow: visible;
+    }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: clamp(3rem, 6.5vw, 10rem);
-    margin-left: -2rem;
-  }
-    
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: clamp(3rem, 6.5vw, 10rem);
+        margin-left: -2rem;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: visible;
-}
+        overflow: visible;
+    }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: 0;
-    margin-left: 0;
-    justify-content: center;
-  }
-    
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: visible;
-}
+        overflow: visible;
+    }
 }
 
 @media (max-width : 480px) {
-  .main > .gallery + div > div:last-child > div > .swiper-pagination {
-    padding-left: 0;
-    margin-left: 0;
-    justify-content: center;
-  }
-    
+    .main > .gallery + div > div:last-child > div > .swiper-pagination {
+        padding-left: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+
     .gallery > .swiper-container > .swiper {
-    overflow: visible;
-}
+        overflow: visible;
+    }
 }
