@@ -70,14 +70,6 @@ ul.icons {
   flex-wrap: wrap;
 }
 
-.gallery > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide > div {
-  width: 100%;
-  padding-top: min(calc(100%/3*2), 80rem);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 @media (min-width : 1201px) {
   ul.icons {
     width: 75%;

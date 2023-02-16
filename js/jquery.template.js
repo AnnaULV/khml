@@ -1,7 +1,4 @@
-function isUpDown() {
-  "use strict";
-  return false;
-}
+var swiper_slide_length = $(".center > .gallery.swiper-container > .swiper > .swiper-wrapper > .swiper-slide").length;
 
 /* функция — положение scroll блока с контентом */
 function isWorkspaceScroll() {
@@ -94,6 +91,103 @@ $(document).ready(function () {
 
   /* вызов функции — после того, как документ полностью загружен */
   isReady();
+
+  /* SWIPER — танцы с бубном */
+  if (swiper_slide_length > 0) {
+
+    let swiperParams = {
+      slidesPerView: 1,
+      spaceBetween: 8,
+      navigation: {
+        nextEl: ".center > .gallery.swiper-container > .swiper-button.next",
+        prevEl: ".center > .gallery.swiper-container > .swiper-button.prev"
+      },
+      observer: true,
+      observeSlideChildren: true,
+      observeParents: true
+    };
+
+    if (swiper_slide_length < 2) {
+      swiperParams.breakpoints = {
+        481: {
+          spaceBetween: 16
+        },
+        961: {
+          spaceBetween: 24
+        },
+        1201: {
+          spaceBetween: 32
+        }
+      };
+    } else {
+      if (swiper_slide_length > 2) {
+        swiperParams.breakpoints = {
+          481: {
+            slidesPerView: 2,
+            spaceBetween: 16
+          },
+          961: {
+            slidesPerView: 3,
+            spaceBetween: 24
+          },
+          1201: {
+            slidesPerView: 3,
+            spaceBetween: 32
+          }
+        };
+      } else {
+        swiperParams.breakpoints = {
+          481: {
+            slidesPerView: 2,
+            spaceBetween: 16
+          },
+          961: {
+            slidesPerView: 2,
+            spaceBetween: 24
+          },
+          1201: {
+            slidesPerView: 2,
+            spaceBetween: 32
+          }
+        };
+      }
+      swiperParams.loop = true;
+    }
+
+    const swiper = new Swiper(".center > .gallery.swiper-container > .swiper", swiperParams);
+
+    swiper.on("resize", function () {
+      if (swiper_slide_length > 1) {
+        if (swiper_slide_length > 2) {
+          if (swiper_slide_length > 3) {
+            swiper.params.loop = true;
+            swiper.loopCreate();
+          } else {
+            if ($(window).outerWidth() > 960) {
+              swiper.params.loop = false;
+              swiper.loopDestroy();
+            } else {
+              swiper.params.loop = true;
+              swiper.loopCreate();
+            }
+          }
+        } else {
+          if ($(window).outerWidth() > 480) {
+            swiper.params.loop = false;
+            swiper.loopDestroy();
+          } else {
+            swiper.params.loop = true;
+            swiper.loopCreate();
+          }
+        }
+      } else {
+        swiper.params.loop = false;
+        swiper.loopDestroy();
+      }
+
+    });
+
+  }
 
   return false;
 });

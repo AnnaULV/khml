@@ -1,7 +1,7 @@
 $(document).ready(function () {
   "use strict";
 
-  new Swiper(".main > .gallery > .swiper-container > .swiper", {
+  new Swiper(".main > .gallery.swiper-container > .swiper", {
     slidesPerView: 1,
     autoplay: {
       delay: 3000,
@@ -53,6 +53,10 @@ $(document).ready(function () {
         slidesPerView: 3,
         spaceBetween: 32
       }
+    },
+    navigation: {
+      nextEl: ".section.news > .center > .swiper-container > .swiper-button.next",
+      prevEl: ".section.news > .center > .swiper-container > .swiper-button.prev"
     }
   });
 
