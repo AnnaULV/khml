@@ -222,6 +222,15 @@ ul.icons {
   display: flex;
 }
 
+ul.icons.column {
+    display: flex;
+    padding-top: 1rem;
+}
+
+ul.icons.column > li {
+    margin-top: 1rem !important;
+}
+
 ul.icons > li {
   display: flex;
   align-items: center;

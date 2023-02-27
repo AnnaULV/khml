@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+.objects {
+    display: flex;
+    flex-direction: column;
+}
+
+.object {
+    position: relative;
+    max-width: 146rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+.object > a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #171D2B;
+}
+
+.object > a > div:first-child {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../img/plug.jpg);
+    overflow: hidden;
+}
+
+.object > a > div:first-child + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.object > a > div:first-child > div {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: transform .25s linear;
+}
+
+.object > a > div:first-child + div {
+    padding-top: clamp(3rem, 5.5vw, 8rem);
+    padding-left: clamp(3rem, 3.5vw, 4rem);
+    padding-right: clamp(3rem, 3.5vw, 4rem);
+    padding-bottom: clamp(3rem, 5.5vw, 8rem);
+}
+
+.object > a > div:first-child + div > span > strong,
+.object > a > div:first-child + div > strong {
+    font-size: clamp(2.75rem, 3vw, 3.25rem);
+    margin-top: 2rem;
+}
+
+.object > a > div:first-child + div > .more {
+    background-color: #F0F0F0;
+    transition: all .25s linear;
+}
+
+.object > a:hover > div:first-child + div > .more {
+    background-color: #BA0C2F;
+}
+
+@media (min-width : 1441px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.5);
+}
+    
+    .object > a > div:first-child {
+        width: 68%;
+    }
+
+    .object > a > div:first-child + div {
+        width: 32%;
+    }
+
+    ul.icons.column {
+        flex-direction: column;
+    }
+    
+     ul.icons.column > li {
+        width: 100%;
+    }
+}
+
+@media (min-width : 1201px) and (max-width : 1440px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.5);
+}
+    
+    .object > a > div:first-child {
+        width: 68%;
+    }
+
+    .object > a > div:first-child + div {
+        width: 32%;
+    }
+
+    ul.icons.column {
+        flex-direction: column;
+    }
+    
+     ul.icons.column > li {
+        width: 100%;
+    }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.5);
+} 
+    
+    .object > a > div:first-child {
+        width: 68%;
+    }
+
+    .object > a > div:first-child + div {
+        width: 32%;
+    }
+
+    ul.icons.column {
+        flex-direction:column;
+    }
+
+    ul.icons.column > li {
+        width: 100%;
+    }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.8);
+}
+    
+    .object > a > div {
+        width: 100%;
+    }
+    
+    ul.icons.column {
+        flex-wrap: wrap;
+    }
+
+    ul.icons.column > li {
+        width: 33.3333%;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.8);
+}
+    
+    .object > a > div {
+        width: 100%;
+    }
+    
+    ul.icons.column {
+        flex-wrap: wrap;
+    }
+
+    ul.icons.column > li {
+        width: 50%;
+    }
+}
+
+@media (max-width : 480px) {
+    .object > a > div:first-child {
+    padding-top: calc(100%/3*1.8);
+}
+    
+    .object > a > div {
+        width: 100%;
+    }
+    
+    ul.icons.column {
+        flex-wrap: wrap;
+    }
+
+    ul.icons.column > li {
+        width: 100%;
+    }
+}
