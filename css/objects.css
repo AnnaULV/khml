@@ -16,6 +16,10 @@
     background-color: #FFF;
 }
 
+.objects > div:not(:last-child) {
+    margin-bottom: clamp(2rem, 3.5vw, 5rem);
+}
+
 .object > a {
     display: flex;
     flex-wrap: wrap;
