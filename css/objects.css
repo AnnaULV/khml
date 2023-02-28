@@ -68,7 +68,10 @@
 
 .object > a > div:first-child + div > span > strong,
 .object > a > div:first-child + div > strong {
-    font-size: clamp(2.75rem, 3vw, 3.25rem);
+    font-size: clamp(2.75rem, 3vw, 3.25rem);  
+}
+
+.object > a > div:first-child + div > span > strong {
     margin-top: 2rem;
 }
 
@@ -101,6 +104,11 @@
      ul.icons.column > li {
         width: 100%;
     }
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
@@ -122,6 +130,11 @@
     
      ul.icons.column > li {
         width: 100%;
+    }
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -145,6 +158,11 @@
     ul.icons.column > li {
         width: 100%;
     }
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
@@ -163,6 +181,11 @@
     ul.icons.column > li {
         width: 33.3333%;
     }
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
@@ -175,11 +198,12 @@
     }
     
     ul.icons.column {
-        flex-wrap: wrap;
+        display: none;
     }
-
-    ul.icons.column > li {
-        width: 50%;
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -193,10 +217,11 @@
     }
     
     ul.icons.column {
-        flex-wrap: wrap;
+        display: none
     }
-
-    ul.icons.column > li {
-        width: 100%;
+    
+    .object > a > div:first-child + div > strong {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 }
