@@ -158,6 +158,15 @@ article > .gallery.swiper-container > .swiper > .swiper-wrapper > .swiper-slide 
   background-position: center;
 }
 
+article > .section > .center > .chips > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
+    margin-bottom: clamp(3rem, 5.5vw, 8rem);
+}
+
+article > .section > .center > .swiper-container > .swiper > .swiper-wrapper > .swiper-slide {
+    border-radius: 1rem;
+overflow: hidden;
+}
+
 @media (min-width : 1441px) {
   .main > .gallery + div > div:last-child > div > .swiper-pagination {
     padding-left: clamp(3rem, 6.5vw, 10rem);
