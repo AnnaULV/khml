@@ -18,7 +18,7 @@
       return false;
     }
 
-    let jsonCSS = JSON.parse('[{"source":"css/reset.css"},{"source":"css/fonts.css"},{"source":"css/style.css"},{"source":"css/header.css"},{"source":"css/article.css"},{"source":"css/burger.css"},{"source":"css/button.css"},{"source":"css/footer.css"},{"source":"css/vh.css"},{"source":"css/form.css"},{"source":"css/swiper.css"}]');
+    let jsonCSS = JSON.parse('[{"source":"css/reset.css"},{"source":"css/fonts.css"},{"source":"css/style.css"},{"source":"css/header.css"},{"source":"css/article.css"},{"source":"css/burger.css"},{"source":"css/button.css"},{"source":"css/footer.css"},{"source":"css/vh.css"},{"source":"css/form.css"},{"source":"css/contacts.css"}]');
     jsonCSS.forEach(function(e, i) {
       setTimeout(function() {
         loadCSS(jsonCSS[i].source + "?" + $.now());
@@ -60,7 +60,7 @@
                 <a href="technologies.html" title="Технологии">Технологии</a>
               </li>
               <li>
-                 <a href="objects.html" title="Каталог объектов">Каталог объектов</a>
+                <a href="objects.html" title="Каталог объектов">Каталог объектов</a>
               </li>
               <li>
                 <a href="news.html" title="Новости и события">Новости и события</a>
@@ -88,12 +88,15 @@
                 Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров.
               </p>
             </div>
-          </div>       
-          <div class="center">
             <div class="content">
               <p>
                 Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений. Помещение расположено на 1-й фасадной линии Ленинградского проспекта, в минуте от м. «Сокол». Густонаселенный престижный район Сокол, с населением более 58 тыс. чел., отлично развитой инфраструктурой, транспортной доступностью и экологичностью. В окружении большое количество ВУЗов и Бизнес-центров. Интенсивный пешеходный трафик вдоль помещений.</p>
             </div>
+
+            <div class="map">
+              <div id="map"></div>
+            </div>
+
           </div>
         </div>
         <div class="section border">
@@ -176,7 +179,7 @@
     </div>
   </div>
   <script defer src="js/jquery.min.js?30012023"></script>
-  <script defer src="js/swiper.min.js?30012023"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script>
     function loadJS(source) {
       "use strict";
@@ -188,7 +191,7 @@
       return false;
     }
 
-    let jsonJS = JSON.parse('[{"source":"js/jquery.inputmask.js"},{"source":"js/jquery.template.js"},{"source":"js/jquery.form.js"}]');
+    let jsonJS = JSON.parse('[{"source":"js/jquery.inputmask.js"},{"source":"js/jquery.template.js"},{"source":"js/jquery.form.js"},{"source":"js/contacts.js"}]');
     jsonJS.forEach(function(e, i) {
       setTimeout(function() {
         loadJS(jsonJS[i].source + "?" + $.now());

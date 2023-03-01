@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+.tabs {
+    position: relative;
+}
+
+.tabs > .chips {
+    width: 100%;
+}
+
 .objects {
     display: flex;
     flex-direction: column;

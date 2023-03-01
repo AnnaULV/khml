@@ -23,6 +23,10 @@ button::after {
   padding: 0;
 }
 
+.button.chips {
+    height: 5rem;
+}
+
 /* тип кнопки — начало */
 
 .button.text > span:first-child + span {
@@ -31,12 +35,26 @@ button::after {
   font-weight: 600;
 }
 
+.button.text.chips > span:first-child + span {
+    font-size: 1.75rem;
+  font-weight: 700;
+}
+
 .button.icon > span:first-child {
   width: 3rem;
   height: 3rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+}
+
+.button.icon.chips > span:first-child {
+    width: 2rem;
+    height: 2rem;
+}
+
+.button.icon.text.reverse {
+  flex-direction: row-reverse;
 }
 
 .button.icon:not(.text) > span:first-child + span,
@@ -70,8 +88,17 @@ button::after {
   background-color: #323232;
 }
 
-.button.red.text > span:first-child + span {
+.button.red.text > span:first-child + span,
+.button.darkgray > span:first-child + span {
   color: #FFF;
+}
+
+.button.darkgray {
+    background-color: #323232;
+}
+
+.button.darkgray.border {
+    border-radius: 3rem;
 }
 
 /* цвет кнопки — конец */
@@ -91,8 +118,17 @@ button::after {
   margin-right: 1.5rem;
 }
 
-.button.icon.text > span:first-child + span {
+.button.icon.text.chips > span:first-child {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.button.icon.text:not(.chips) > span:first-child + span {
   margin-right: 3rem;
+}
+
+.button.icon.text.chips > span:first-child + span {
+    margin-left: 3rem;
 }
 
 /* внешние отступы — конец */
