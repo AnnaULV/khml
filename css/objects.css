@@ -44,6 +44,7 @@
     background-size: cover;
     background-image: url(../img/plug.jpg);
     overflow: hidden;
+    padding-top: calc(100%/3*2);
 }
 
 .object > a > div:first-child + div {
@@ -93,9 +94,6 @@
 }
 
 @media (min-width : 1441px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.5);
-}
     
     .object > a > div:first-child {
         width: 68%;
@@ -120,9 +118,6 @@
 }
 
 @media (min-width : 1201px) and (max-width : 1440px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.5);
-}
     
     .object > a > div:first-child {
         width: 68%;
@@ -147,9 +142,6 @@
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.5);
-} 
     
     .object > a > div:first-child {
         width: 68%;
@@ -174,10 +166,6 @@
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.8);
-}
-    
     .object > a > div {
         width: 100%;
     }
@@ -197,9 +185,6 @@
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.8);
-}
     
     .object > a > div {
         width: 100%;
@@ -215,11 +200,7 @@
     }
 }
 
-@media (max-width : 480px) {
-    .object > a > div:first-child {
-    padding-top: calc(100%/3*1.8);
-}
-    
+@media (max-width : 480px) {   
     .object > a > div {
         width: 100%;
     }
