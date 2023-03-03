@@ -44,7 +44,6 @@
     background-size: cover;
     background-image: url(../img/plug.jpg);
     overflow: hidden;
-    padding-top: calc(100%/3*2);
 }
 
 .object > a > div:first-child + div {
@@ -97,6 +96,7 @@
     
     .object > a > div:first-child {
         width: 68%;
+        padding-top: calc(100%/3*1.5);
     }
 
     .object > a > div:first-child + div {
@@ -121,6 +121,7 @@
     
     .object > a > div:first-child {
         width: 68%;
+        padding-top: calc(100%/3*1.5);
     }
 
     .object > a > div:first-child + div {
@@ -145,6 +146,7 @@
     
     .object > a > div:first-child {
         width: 68%;
+        padding-top: calc(100%/3*1.5);
     }
 
     .object > a > div:first-child + div {
@@ -170,12 +172,12 @@
         width: 100%;
     }
     
-    ul.icons.column {
-        flex-wrap: wrap;
+    .object > a > div:first-child {
+        padding-top: calc(100%/3*1.8);
     }
-
-    ul.icons.column > li {
-        width: 33.3333%;
+    
+    ul.icons.column {
+        display: none;
     }
     
     .object > a > div:first-child + div > strong {
@@ -188,6 +190,10 @@
     
     .object > a > div {
         width: 100%;
+    }
+    
+    .object > a > div:first-child {
+        padding-top: calc(100%/3*1.8);
     }
     
     ul.icons.column {
@@ -203,6 +209,10 @@
 @media (max-width : 480px) {   
     .object > a > div {
         width: 100%;
+    }
+    
+    .object > a > div:first-child {
+        padding-top: calc(100%/3*1.8);
     }
     
     ul.icons.column {
