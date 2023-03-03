@@ -74,12 +74,12 @@
     padding-bottom: clamp(3rem, 5.5vw, 8rem);
 }
 
-.object > a > div:first-child + div > span > strong,
+.object > a > div:first-child + div > div > span > strong,
 .object > a > div:first-child + div > strong {
     font-size: clamp(2.75rem, 3vw, 3.25rem);  
 }
 
-.object > a > div:first-child + div > span > strong {
+.object > a > div:first-child + div > div > span > strong {
     margin-top: 2rem;
 }
 
@@ -136,7 +136,7 @@
         width: 100%;
     }
     
-    .object > a > div:first-child + div > strong {
+    .object > a > div:first-child + div > div > strong {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
@@ -161,7 +161,7 @@
         width: 100%;
     }
     
-    .object > a > div:first-child + div > strong {
+    .object > a > div:first-child + div > div strong {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
